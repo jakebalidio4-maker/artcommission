@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Admin | Art Commission PH</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--paper:#f7f2e9;--panel:#fffdf8;--panel-soft:#f2e9dd;--ink:#29231e;--muted:#6d6257;--line:#dfd2c1;--accent:#b56d43;--accent-dark:#92502f;--gold:#cfae6f;--ok:#34754b;--warn:#815316;--bad:#94372f;--info:#365e82;--danger-bg:#fff0ee;--warn-bg:#fff6e6;--ok-bg:#edf7ef;--info-bg:#edf5fc;--serif:'Fraunces',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;--radius:12px;--radius-sm:8px}
+[hidden]{display:none!important}*{box-sizing:border-box;margin:0}body{background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans)}h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;line-height:1.15}h2{font-size:clamp(1.45rem,2.5vw,1.9rem);margin-bottom:10px}h3{font-size:1.22rem;margin:0 0 10px}a{color:inherit}button,input,select,textarea{font:inherit}button,a,input,select,textarea,summary{touch-action:manipulation}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+label{display:grid;gap:6px;color:var(--muted);font-size:.9rem;line-height:1.45;min-width:0}input,select,textarea{background:#fffdf8;border:1px solid var(--line);color:var(--ink);padding:12px 13px;font:400 16px/1.4 var(--sans);width:100%;min-width:0;border-radius:var(--radius-sm)}textarea{resize:vertical}input[type=checkbox]{width:auto;accent-color:var(--accent)}input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:3px solid rgba(181,109,67,.16)}
+button{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--accent);color:#fffdf8;border:1px solid transparent;padding:11px 17px;min-height:44px;font:600 .94rem/1.25 var(--sans);cursor:pointer;border-radius:var(--radius-sm);box-shadow:0 3px 10px rgba(57,41,26,.07);transition:background .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease}button:hover{background:var(--accent-dark);color:#fffdf8;border-color:var(--accent-dark);box-shadow:0 5px 14px rgba(142,77,42,.16)}button:active{transform:translateY(0)}button:disabled{opacity:.58;box-shadow:none;cursor:wait}button.g{background:var(--panel);color:var(--ink);border-color:var(--line);box-shadow:none}button.g:hover{background:var(--panel-soft);color:var(--ink);border-color:#cdbba7}button.d{background:#fff4f2;color:var(--bad);border-color:#d9a49e;box-shadow:none}button.d:hover{background:#ffe9e5;border-color:#c7837b;color:#7f2822}
+.box{background:var(--panel);border:1px solid var(--line);padding:clamp(22px,4vw,34px);max-width:460px;display:grid;gap:16px;border-radius:var(--radius);box-shadow:0 18px 48px rgba(57,41,26,.08)}#load,#login{margin:10vh auto 0;width:min(460px,92vw)}#login h1{font-size:2.25rem;margin-bottom:8px}#login button{width:100%}
+.shell{display:grid;grid-template-columns:258px minmax(0,1fr);min-height:100vh}aside{background:#2d261f;color:#f9f1e6;border-right:0;padding:25px 15px;display:flex;flex-direction:column;gap:20px;position:sticky;top:0;height:100vh;overflow-y:auto;box-shadow:8px 0 30px rgba(57,41,26,.05)}.brand{font:600 1.4rem/1.15 var(--serif);padding:0 10px;color:#fff8ed}.brand i{font-weight:400;color:#e2ad83}.brand small{display:block;font:600 .72rem var(--sans);letter-spacing:.15em;text-transform:uppercase;color:#c6b6a5;margin-top:6px}#nav{display:grid;gap:5px}#nav button{justify-content:flex-start;background:transparent;color:#d0c0af;text-align:left;font-weight:500;box-shadow:none;border-color:transparent;padding:12px 13px;min-height:46px}#nav button:hover{background:#40352b;color:#fff8ed;border-color:#40352b}#nav button[aria-current=page]{background:#49392c;color:#f1bd94;box-shadow:inset 3px 0 #d99a6d}.sfoot{margin-top:auto;display:grid;gap:8px}.sfoot a{color:#d0c0af;padding:10px;font-size:.94rem;text-decoration:none;border-radius:7px}.sfoot a:hover{color:#fff8ed;background:#40352b}.sfoot button.g{background:transparent;color:#f1e5d7;border-color:#675748}
+.main{padding:clamp(22px,3vw,42px) clamp(16px,3vw,44px) 64px;min-width:0}.top{display:flex;align-items:center;gap:16px;margin-bottom:28px;border-bottom:1px solid var(--line);padding-bottom:20px}.top h1{font-size:clamp(2rem,3.5vw,2.8rem)}#menu{display:none;background:var(--panel);color:var(--ink);border-color:var(--line);box-shadow:none}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr));gap:14px}.tile{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius);text-align:left;padding:20px;display:grid;gap:7px;min-height:112px;box-shadow:0 7px 22px rgba(57,41,26,.045);position:relative}.tile:hover{background:#f4e8db;color:var(--ink);border-color:var(--accent);box-shadow:0 10px 26px rgba(57,41,26,.08)}.tile:hover b{color:var(--accent)}.tile:hover span{color:var(--muted)}.tile.hot:hover{background:#f8ebd6;color:var(--ink)}.tile.urgent:hover{background:#ffe5e0;color:var(--ink)}.tile b{font:400 2.45rem/1 var(--serif);color:var(--accent)}.tile span{color:var(--muted);font-size:.92rem;font-weight:500}.tile.hot{background:var(--warn-bg);border-color:#d9bd8d}.tile.hot b{color:var(--warn)}.tile.urgent{background:var(--danger-bg);border-color:#d9a49e}.tile.urgent b{color:var(--bad)}
+.attention-panel{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:var(--radius);padding:20px 22px;margin:0 0 24px;box-shadow:0 7px 22px rgba(57,41,26,.04)}.attention-panel h2{font-size:1.55rem;margin-bottom:5px}.attention-panel>p{color:var(--muted);margin-bottom:14px}.attention-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.attention-link{display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:var(--warn-bg);border:1px solid #e5d1ac;color:#5f482b;box-shadow:none;min-height:60px;padding:13px 15px}.attention-link:hover{background:#f8ebd6;color:#5f482b;border-color:#d9bd8d;box-shadow:none}.attention-link.urgent{background:var(--danger-bg);border-color:#d9a49e;color:#87342d}.attention-link.urgent:hover{background:#ffe5e0;color:#87342d;border-color:#c7837b}.attention-link strong{font:600 1.45rem/1 var(--serif)}.section-kicker{font:600 .76rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:24px 0 12px}
+.filters{display:grid;grid-template-columns:minmax(220px,2fr) repeat(4,minmax(120px,1fr));gap:10px;margin-bottom:14px}.chip{display:inline-flex;gap:8px;align-items:center;background:#f4e8db;border:1px solid #d2a17e;padding:6px 8px 6px 14px;border-radius:999px;margin-bottom:12px;font-size:.85rem}.chip button{min-height:30px;padding:0 9px;background:transparent;color:var(--ink);box-shadow:none}.split{display:grid;grid-template-columns:minmax(270px,370px) minmax(0,1fr);gap:16px;align-items:start}.split.has{grid-template-columns:minmax(250px,320px) minmax(0,1fr)}#olist{display:grid;gap:9px;max-height:78vh;overflow:auto;padding:0 3px 3px 0;scrollbar-gutter:stable}.item{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:var(--radius-sm);text-align:left;padding:14px;display:grid;gap:7px;font-weight:400;box-shadow:0 3px 12px rgba(57,41,26,.025)}.item:hover{background:#f4e8db;color:var(--ink);border-color:var(--accent);box-shadow:0 4px 14px rgba(57,41,26,.08)}
+.item:hover small{color:var(--muted)}
+.item[aria-pressed=true],.item[aria-pressed=true]:hover{border-color:var(--accent);background:#efe0cf;color:var(--ink);box-shadow:inset 3px 0 var(--accent),0 4px 14px rgba(57,41,26,.08)}
+.item[aria-pressed=true] small{color:var(--muted)}
+#olist .item:focus-visible{background:#f4e8db;color:var(--ink);border-color:var(--accent)}.item small,.mute{color:var(--muted)}.meta{display:flex;flex-wrap:wrap;align-items:center;gap:5px}.b{display:inline-block;padding:4px 10px;border-radius:999px;font-size:.79rem;line-height:1.35;font-weight:600;border:1px solid var(--line);color:var(--muted);background:#f4eee5}.b.ok{color:#27613c;border-color:#8db69a;background:var(--ok-bg)}.b.warn{color:#815316;border-color:#d9bd8d;background:var(--warn-bg)}.b.bad{color:#94372f;border-color:#d9a49e;background:var(--danger-bg)}.b.info{color:#365e82;border-color:#a8c1d9;background:var(--info-bg)}
+.card{background:var(--panel);border:1px solid var(--line);padding:clamp(17px,2vw,23px);border-radius:var(--radius);margin-bottom:14px;box-shadow:0 7px 22px rgba(57,41,26,.045);min-width:0}.order-detail{padding:clamp(18px,2.5vw,28px)}.detail-intro{padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:4px}.detail-intro h2{margin:8px 0 12px;overflow-wrap:anywhere}.detail-intro p{line-height:1.65;overflow-wrap:anywhere}.sec{border-top:1px solid var(--line);padding-top:18px;margin-top:18px;min-width:0}.sec h3{margin-bottom:12px}.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:12px;align-items:end;padding:9px 0}.row>button{align-self:end}.sec .row{padding-top:10px;padding-bottom:10px}.sec .row .acts{align-self:end}.sec p{line-height:1.65;overflow-wrap:anywhere}.sec .mute{font-size:.91rem}.payment-summary{background:#fcf8f1;border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px;margin-top:16px}.payment-summary h3{margin-bottom:10px}.payment-history{color:var(--muted);font-size:.9rem;line-height:1.9}.order-detail details{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}summary{cursor:pointer;color:var(--bad);font-weight:600;padding:8px 0}details[open] summary{margin-bottom:8px}.alert{border:1px solid #d9bd8d;background:var(--warn-bg);color:#76511f;padding:12px 14px;border-radius:var(--radius-sm);margin:10px 0;line-height:1.55}.alert.bad{border-color:#d9a49e;background:var(--danger-bg);color:#94372f}.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}table{width:100%;border-collapse:collapse;font-size:.94rem}td,th{padding:12px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{color:var(--muted);background:#f8f2e9;font-weight:600;white-space:nowrap}tr:last-child td{border-bottom:0}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));gap:18px}.gal .card{margin:0;display:grid;gap:9px}.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-sm);background:var(--paper-deep)}.empty{border:1px dashed #d6c6b4;padding:32px;text-align:center;color:var(--muted);border-radius:var(--radius);background:var(--panel)}#msg{position:fixed;bottom:18px;right:18px;background:var(--panel);color:var(--ink);border:1px solid var(--ok);padding:14px 18px;max-width:min(90vw,440px);z-index:99;border-radius:var(--radius);box-shadow:0 12px 36px rgba(57,41,26,.16);line-height:1.5}dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:24px;border-radius:var(--radius);width:min(460px,92vw);box-shadow:0 28px 90px rgba(0,0,0,.22)}dialog::backdrop{background:rgba(33,24,16,.65)}dialog form{display:grid;gap:14px}dialog .acts{margin-top:8px}.acts{display:flex;gap:9px;justify-content:flex-end;flex-wrap:wrap}.acts button{flex:0 0 auto}
+@media(max-width:1100px){.shell{grid-template-columns:230px minmax(0,1fr)}.main{padding:24px 20px 50px}.split,.split.has{grid-template-columns:minmax(230px,.75fr) minmax(0,1fr)}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.filters label:first-child{grid-column:1/-1}}
+@media(max-width:900px){.shell{grid-template-columns:1fr}aside{position:fixed;inset:0 22% 0 0;z-index:40;height:100dvh;transform:translateX(-105%);transition:transform .2s;box-shadow:none}aside.open{transform:none;box-shadow:0 0 0 100vmax rgba(0,0,0,.55)}#menu{display:inline-flex}.main{padding:20px 16px 48px}.split,.split.has{grid-template-columns:1fr;gap:12px}.split.has #olist{display:none}.split:not(.has) #odet{display:none}.attention-panel{padding:17px}.attention-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tiles{grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}.sec .row{grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr))}}
+@media(max-width:600px){body{font-size:15px}.top{gap:10px;align-items:flex-start}.top h1{font-size:2rem}.main{padding:18px 12px 40px}.attention-grid{grid-template-columns:1fr}.attention-link{width:100%}.attention-panel{padding:15px}.filters{grid-template-columns:1fr}.filters label:first-child{grid-column:auto}.tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.tile{padding:14px;min-height:98px}.tile b{font-size:2rem}.tile span{font-size:.83rem}.card{padding:16px}.row{grid-template-columns:1fr}.row>button{width:100%}.acts{justify-content:stretch}.acts button{flex:1 1 100%}.gal{grid-template-columns:1fr}.wrap table{min-width:640px}td,th{padding:10px 8px}.box{padding:22px}#msg{left:12px;right:12px;bottom:12px;max-width:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+
+.message-thread-card{cursor:pointer}
+@media(max-width:850px){.message-layout{grid-template-columns:1fr!important}}
+
+
+/* Final accessibility pass: persistent, high-contrast admin feedback */
+#lerr{margin-top:4px;padding:0;line-height:1.55;overflow-wrap:anywhere}
+#lerr:not(:empty){display:block;padding:12px 14px;border:1px solid #d9a49e;border-radius:8px;background:#fff0ee;color:#7d2822!important}
+#msg{overflow-wrap:anywhere;white-space:pre-wrap;max-width:min(92vw,520px);font-size:1rem}
+#msg:focus{outline:3px solid var(--accent);outline-offset:3px}
+.mute{line-height:1.55}
+@media(max-width:600px){#msg{left:12px;right:12px;bottom:12px;max-width:none;padding:13px 14px}.box{gap:14px}}
+
+
+/* Studio Experience V3 — artist operations workspace */
+:root{--paper:#f6f3ed;--panel:#fffefa;--panel-soft:#f3ebe0;--accent:#a65d38;--accent-dark:#83442a;--line:#dfd5c7;--radius:15px}
+body{background:#f6f3ed}
+.shell{grid-template-columns:266px minmax(0,1fr)}
+aside{background:linear-gradient(180deg,#241f1b 0%,#352a24 100%);box-shadow:5px 0 35px #25191018;padding:30px 17px}
+.brand{font-size:1.47rem;letter-spacing:-.03em;border-bottom:1px solid #58483b;padding-bottom:25px;margin-bottom:2px}
+.brand small{letter-spacing:.18em;color:#dfb48e}
+#nav button{border-radius:10px;padding:12px 15px;min-height:48px;font-weight:600;color:#ddcec0}
+#nav button:hover{background:#47382e}
+#nav button[aria-current=page]{background:#634634;color:#fff4e8;box-shadow:inset 3px 0 #dca67d}
+.sfoot{border-top:1px solid #59493c;padding-top:17px}
+.main{max-width:1750px;margin:auto;padding:clamp(24px,3.2vw,48px) clamp(20px,3.4vw,56px) 70px}
+.top{border-bottom:1px solid #dfd5c7;padding-bottom:22px;margin-bottom:25px;align-items:end}
+.top::after{content:'STUDIO WORKSPACE';margin-left:auto;font-size:.73rem;letter-spacing:.17em;font-weight:700;color:#8f735e}
+.top h1{font-size:clamp(2rem,3.5vw,3.1rem);letter-spacing:-.035em}
+.attention-panel{border-left:0;padding:27px;border-radius:18px;background:#fffcf8;box-shadow:0 14px 35px #4029180a}
+.attention-grid{gap:14px}
+.attention-link{padding:18px 20px;border-radius:12px;min-height:85px}
+.attention-link strong{font-size:1.85rem}
+.tiles{gap:16px}
+.tile{border-radius:15px;padding:24px;min-height:135px;box-shadow:0 9px 30px #4932220b}
+.tile b{font-size:2.75rem}
+.tile span{font-size:.94rem;color:#605448}
+.card{border-radius:15px;box-shadow:0 10px 27px #4431200a}
+.filters{background:#fffefa;padding:16px;border:1px solid var(--line);border-radius:15px;align-items:end}
+#olist .item{border-radius:12px;padding:18px 17px}
+.order-detail{border-radius:16px}
+.payment-summary{background:#f7efe4}
+#view .message-layout>.card, #view .message-layout .card{box-shadow:0 10px 30px #4431200b}
+#view .message-layout form{padding-top:12px;border-top:1px solid var(--line)}
+@media(max-width:900px){.top::after{display:none}.attention-grid{grid-template-columns:1fr}.attention-link{min-height:65px}}
+@media(max-width:650px){.main{padding:18px 13px 40px}.attention-panel{padding:18px}.filters{padding:12px}.tile{min-height:100px;padding:17px}}
+
+</style></head>
+<body>
+<p id="load" role="status">Loading...</p>
+<div id="login" class="box" hidden><h1>Admin login</h1>
+ <label>Email<input id="em" type="email" autocomplete="username"></label>
+ <label>Password<input id="pw" type="password" autocomplete="current-password"></label>
+ <button type="button" id="go">Log in</button><p id="lerr" style="color:var(--bad)" role="alert"></p></div>
+<div id="app" class="shell" hidden>
+ <aside id="side"><div class="brand">Art Commission <i>PH</i><small>Admin</small></div><nav id="nav" aria-label="Admin sections"></nav>
+  <div class="sfoot"><a href="index.html">View public website</a><button type="button" class="g" id="out">Log out</button></div></aside>
+ <div class="main"><div class="top"><button type="button" id="menu" aria-label="Open navigation menu" aria-expanded="false">Menu</button><h1 id="ttl"></h1></div><div id="view"></div></div></div>
+<div id="msg" hidden role="status"></div>
+<dialog id="md"><form method="dialog"><h2 id="mt"></h2><p id="mp" class="mute"></p><textarea id="mi" rows="3" hidden aria-label="Details"></textarea>
+ <div class="acts"><button value="no" class="g" id="mn">Cancel</button><button value="yes" id="my">Confirm</button></div></form></dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script>
+const sb=supabase.createClient('https://ufpkjbayngiujjwloubx.supabase.co','sb_publishable_UY1HEQRPlq5JUR1a-Sv3cQ_BnnEJvH2');
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const peso=n=>n==null?'-':'₱'+Number(n).toLocaleString('en-PH',{minimumFractionDigits:2,maximumFractionDigits:2});
+const dt=d=>d?new Date(d).toLocaleString('en-PH',{dateStyle:'medium',timeStyle:'short'}):'';
+const AS=['Pending','Negotiating','Awaiting Downpayment','In Progress','Done'];
+const pub=p=>sb.storage.from('artworks').getPublicUrl(p).data.publicUrl;
+const bc=t=>/^(Verified|Paid|Delivered|Done|Shipped|Published|Approved|Refunded)/.test(t)?'ok':/^(Pending|Awaiting|Negotiating|Partially|Ready|In Progress)/.test(t)?'warn':/^(Rejected|Cancelled|Hidden|Unpaid)/.test(t)?'bad':'';
+const B=(t,c)=>`<span class="b ${c??bc(t)}">${esc(t)}</span>`;
+let tab='overview',cats=[],L=[],sel=null,messageOrderId=null,F={q:'',st:'',pay:'',dm:'',ds:'',pre:''};
+const TABS=[['overview','Overview'],['orders','Orders'],['messages','Messages'],['payments','Payments'],['history','Order history'],['pricing','Pricing'],['gallery','Gallery'],['reviews','Reviews']];
+function say(t,bad){const m=$('#msg');m.textContent=t;m.style.borderColor=bad?'var(--bad)':'var(--ok)';m.hidden=false;clearTimeout(say.t);say.t=setTimeout(()=>m.hidden=true,3800)}
+const ok=(r,m)=>{if(r.error){say('Error: '+r.error.message,1);return false}say(m);return true};
+function ask(t,p,yes='Confirm',input=false,no='Cancel'){return new Promise(res=>{$('#mt').textContent=t;$('#mp').textContent=p||'';const i=$('#mi');i.hidden=!input;i.value='';$('#my').textContent=yes;$('#mn').textContent=no;const d=$('#md');d.returnValue='';
+ d.onclose=()=>res(d.returnValue=='yes'?(input?(i.value.trim()||null):true):null);d.showModal()})}
+async function shrink(file){const b=await createImageBitmap(file);const s=Math.min(1,1000/Math.max(b.width,b.height));const c=document.createElement('canvas');c.width=Math.round(b.width*s);c.height=Math.round(b.height*s);c.getContext('2d').drawImage(b,0,0,c.width,c.height);return new Promise(r=>c.toBlob(r,'image/webp',.82))}
+
+/* access: needs a session AND a row in the admins table (the database checks this again on every action) */
+async function guard(){
+ const {data:{session},error:sessionError}=await sb.auth.getSession();
+ if(sessionError)return 'error';
+ if(!session)return false;
+ const {data,error}=await sb.rpc('is_admin');
+ if(error)return 'error';
+ if(data===true)return true;
+ // Do not log out a customer who merely visits the admin.html URL.
+ return 'denied';
+}
+async function start(){$('#load').hidden=false;$('#login').hidden=$('#app').hidden=true;const g=await guard();$('#load').hidden=true;
+ if(g===true){$('#app').hidden=false;await boot()}else{$('#login').hidden=false;$('#lerr').textContent=g==='denied'?'Access denied. Customer accounts cannot open the administrator dashboard.':' '+(g==='error'?'Unable to verify access. Please retry.':'')}}
+$('#go').onclick=async()=>{const b=$('#go');b.disabled=true;b.textContent='Logging in...';const {error}=await sb.auth.signInWithPassword({email:$('#em').value,password:$('#pw').value});b.disabled=false;b.textContent='Log in';
+ if(error){const m=String(error.message||'');$('#lerr').textContent=/rate limit|too many requests/i.test(m)?'Too many authentication attempts. Wait a while before trying again.':/invalid login credentials/i.test(m)?'The email or password is incorrect. Check both fields and try again.':'Login failed: '+m;return}start()};
+$('#out').onclick=async()=>{if(await ask('Are you sure you want to log out?','You will need to log in again to manage orders.','Yes, Log Out',false,'No, Stay')){await sb.auth.signOut();$('#pw').value='';start()}};
+$('#menu').onclick=()=>{const open=$('#side').classList.toggle('open');$('#menu').setAttribute('aria-expanded',String(open))};
+
+async function boot(){if(!cats.length)cats=(await sb.from('categories').select('*').order('sort')).data||[];render()}
+async function render(){$('#side').classList.remove('open');$('#ttl').textContent=TABS.find(t=>t[0]==tab)[1];
+ $('#nav').innerHTML=TABS.map(t=>`<button data-t="${t[0]}" ${t[0]==tab?'aria-current="page"':''}>${t[1]}</button>`).join('');
+ $('#view').innerHTML='<p class="mute" role="status">Loading...</p>';try{await V[tab]()}catch(e){$('#view').innerHTML='<div class="alert bad">Something went wrong: '+esc(e.message)+'</div>'}}
+async function ords(){const r=await sb.rpc('admin_orders');if(r.error)throw r.error;return L=r.data||[]}
+const catSel=(v,a)=>`<select ${a}>${cats.map(c=>`<option value="${c.id}" ${c.id==v?'selected':''}>${esc(c.name)}</option>`).join('')}</select>`;
+const catName=id=>(cats.find(c=>c.id==id)||{}).name||id;
+const warn=o=>{const s=o.summary;if(o.delivery_method!='LBC'||['Shipped','Delivered'].includes(o.delivery_status)||o.status=='Cancelled')return '';return o.shipping_fee==null?'LBC shipping fee not entered yet.':s.final_verified<s.final_required?'Not ready for dispatch: the balance and shipping fee are not fully verified.':''};
+const PRE={active:['Active orders',o=>!['Delivered','Cancelled'].includes(o.status)],price:['Awaiting price confirmation',o=>o.price==null&&!['Delivered','Cancelled'].includes(o.status)],down:['Awaiting downpayment',o=>o.status=='Awaiting Downpayment'],progress:['Artwork in progress',o=>o.status=='In Progress'],done:['Done, awaiting final payment or dispatch',o=>o.status=='Done'&&o.delivery_status=='Not Ready'],ready:['Ready to ship or deliver',o=>o.delivery_status=='Ready for Dispatch'],shipped:['Shipped',o=>o.delivery_status=='Shipped'],delivered:['Delivered',o=>o.status=='Delivered'],cancel:['Cancellation requests',o=>o.cancel_requested_at&&o.status!='Cancelled'],refund:['Refunds to send',o=>o.summary.refund_status=='Pending']};
+
+const V={
+async overview(){await ords();const pend=L.reduce((n,o)=>n+o.payments.filter(p=>p.status=='Pending Verification').length,0);
+ const cancel=L.filter(PRE.cancel[1]).length,refund=L.filter(PRE.refund[1]).length;
+ const T=k=>{const n=L.filter(PRE[k][1]).length;return `<button class="tile ${['price','cancel','refund'].includes(k)&&n?'hot':''}" data-pre="${k}"><b>${n}</b><span>${PRE[k][0]}</span></button>`};
+ const attention=[
+  {label:'Payments to verify',count:pend,go:'payments',urgent:pend>0},
+  {label:'Cancellation requests',count:cancel,pre:'cancel',urgent:cancel>0},
+  {label:'Refunds to send',count:refund,pre:'refund',urgent:refund>0}
+ ];
+ $('#view').innerHTML=`<p class="mute" style="margin-bottom:14px">Counts come from your current orders. Select an item to open the relevant queue.</p>
+ <section class="attention-panel" aria-labelledby="attentionTitle"><h2 id="attentionTitle">Needs attention</h2><p>Review time-sensitive payment and customer requests first.</p><div class="attention-grid">${attention.map(a=>`<button class="attention-link ${a.urgent?'urgent':''}" ${a.go?`data-go="${a.go}"`:`data-pre="${a.pre}"`}><span>${a.label}</span><strong>${a.count}</strong></button>`).join('')}</div></section>
+ <h2 class="section-kicker">Order pipeline and status</h2><div class="tiles">${['active','price','down','progress','done','ready','shipped','delivered'].map(T).join('')}</div>`},
+
+async orders(){await ords();
+ $('#view').innerHTML=`<div class="filters"><label>Search<input data-f="q" placeholder="Order number, name, contact, or service" value="${esc(F.q)}"></label>
+ <label>Artwork<select data-f="st"><option value="">All</option>${[...AS,'Delivered','Cancelled'].map(x=>`<option ${F.st==x?'selected':''}>${x}</option>`).join('')}</select></label>
+ <label>Payment<select data-f="pay"><option value="">All</option>${['Unpaid','Pending Verification','Partially Paid','Paid','Rejected'].map(x=>`<option ${F.pay==x?'selected':''}>${x}</option>`).join('')}</select></label>
+ <label>Delivery method<select data-f="dm"><option value="">All</option><option ${F.dm=='Local'?'selected':''}>Local</option><option ${F.dm=='LBC'?'selected':''}>LBC</option></select></label>
+ <label>Delivery status<select data-f="ds"><option value="">All</option>${['Not Ready','Ready for Dispatch','Shipped','Delivered'].map(x=>`<option ${F.ds==x?'selected':''}>${x}</option>`).join('')}</select></label></div>
+ <div id="chip"></div><div class="split ${sel?'has':''}" id="split"><div id="olist"></div><div id="odet"></div></div>`;drawList();drawDet()},
+
+async payments(){await ords();const P=[];L.forEach(o=>o.payments.forEach(p=>P.push({p,o})));
+ const pr=({p,o})=>`<div class="card"><div class="meta"><b>${esc(o.order_no)}</b> ${B(p.purpose,'info')} ${B(p.status=='Pending Verification'?'Submitted, NOT verified':p.status,p.status=='Pending Verification'?'warn':bc(p.status))}</div>
+  <p style="margin-top:6px"><b>${peso(p.amount)}</b> | Ref: ${esc(p.reference)} | ${dt(p.submitted_at)}${p.reject_reason?`<br><span class="mute">Rejected: ${esc(p.reject_reason)}</span>`:''}</p>
+  <p class="mute" style="font-size:.85rem">${esc(o.name)} | Price ${peso(o.summary.price)} | Down ${peso(o.summary.down_required)} (verified ${peso(o.summary.down_verified)}) | Balance ${peso(o.summary.balance)} | Shipping ${peso(o.summary.shipping_fee)}</p>
+  <div class="acts" style="justify-content:flex-start;margin-top:8px">${p.receipt_path?`<button class="g" data-rc="${esc(p.receipt_path)}">View receipt</button>`:''}${p.status=='Pending Verification'?`<button data-vp="verify" data-id="${p.id}">Verify payment</button><button class="d" data-vp="reject" data-id="${p.id}">Reject</button>`:''}</div></div>`;
+ const pend=P.filter(x=>x.p.status=='Pending Verification'),blocked=L.filter(o=>warn(o)),unpaid=L.filter(o=>o.summary.price!=null&&o.summary.payment_status!='Paid'&&!['Cancelled','Delivered'].includes(o.status)),ref=L.filter(o=>o.summary.refund_status=='Pending');
+ const lst=(a,f)=>a.length?a.map(f).join(''):'<p class="mute">None.</p>';
+ $('#view').innerHTML=`<div class="alert">Verify only after confirming the funds arrived in your actual GCash account. Expected recipient for customer instructions: Jake S. Balidio, 09632589163. A screenshot or reference number alone is not proof of payment.</div>
+ <h2>Waiting for your verification (${pend.length})</h2>${pend.length?pend.map(pr).join(''):'<div class="empty">No payments are waiting.</div>'}
+ <h2 style="margin-top:22px">LBC orders not ready for dispatch</h2>${lst(blocked,o=>`<p><b>${esc(o.order_no)}</b> <span class="mute">${esc(warn(o))}</span></p>`)}
+ <h2 style="margin-top:22px">Orders with unpaid balances</h2>${lst(unpaid,o=>`<p><b>${esc(o.order_no)}</b> ${esc(o.name)}: ${peso(o.summary.total_due)} still due ${B(o.summary.payment_status)}</p>`)}
+ <h2 style="margin-top:22px">Refunds to send</h2>${lst(ref,o=>`<p><b>${esc(o.order_no)}</b>: ${peso(o.summary.refund_due)} to ${esc(o.refund_gcash||'(no number given)')}</p>`)}
+ <h2 style="margin-top:22px">Payment history</h2>${lst(P.filter(x=>x.p.status!='Pending Verification'),pr)}`},
+
+
+async messages(){
+ const r=await sb.rpc('admin_message_threads');if(r.error)throw r.error;
+ const threads=Array.isArray(r.data)?r.data:[];
+ if(messageOrderId&&!threads.some(t=>t.order_id===messageOrderId))messageOrderId=null;
+ const chosen=threads.find(t=>t.order_id===messageOrderId)||null;
+ let messages=[];
+ if(chosen){const mr=await sb.rpc('admin_order_messages',{p_order_id:chosen.order_id});if(mr.error)throw mr.error;messages=Array.isArray(mr.data)?mr.data:[]}
+ const threadCard=t=>`<button type="button" class="card message-thread-card" data-thread="${esc(t.order_id)}" style="display:block;width:100%;text-align:left;margin-bottom:10px;background:${t.order_id===messageOrderId?'var(--panel-soft)':'var(--panel)'};color:var(--ink)">
+   <div class="meta"><b>${esc(t.order_no)}</b> ${t.unread_count?B(t.unread_count+' unread','warn'):''}</div>
+   <p style="margin:6px 0"><b>${esc(t.customer_name||'Customer')}</b></p>
+   <p class="mute" style="font-size:.85rem">${esc(t.customer_email||'Legacy order not linked to an account')}</p>
+   <p style="margin-top:6px">${esc(t.last_message?.body||'No messages yet').slice(0,140)}</p>
+   <small class="mute">${t.last_message?.created_at?dt(t.last_message.created_at):''}</small>
+  </button>`;
+ const convo=chosen?`<div class="card"><h2>${esc(chosen.order_no)} · ${esc(chosen.customer_name||'Customer')}</h2><p class="mute">${esc(chosen.customer_email||'This order is not linked to a customer account.')}</p>
+  <div class="admin-thread" style="display:grid;gap:10px;margin:16px 0;max-height:480px;overflow:auto">${messages.length?messages.map(m=>`<div style="max-width:90%;justify-self:${m.sender_role==='admin'?'end':'start'};background:${m.sender_role==='admin'?'var(--panel-soft)':'var(--info-bg)'};color:var(--ink);padding:12px 14px;border-radius:10px;overflow-wrap:anywhere"><small class="mute">${m.sender_role==='admin'?'Jake · Admin':'Customer'} · ${dt(m.created_at)}</small><p>${esc(m.body).replace(/\\n/g,'<br>')}</p></div>`).join(''):'<p class="mute">No messages in this conversation yet.</p>'}</div>
+  <form id="adminMessageForm" data-order-id="${esc(chosen.order_id)}" style="display:grid;gap:10px"><label>Reply to customer<textarea name="body" rows="4" required maxlength="2000" placeholder="Write your reply..."></textarea></label><button type="submit">Send reply</button></form>
+ </div>`:'<div class="empty">Select a conversation to read messages and reply. New customer messages will appear here.</div>';
+ $('#view').innerHTML=`<div class="message-layout" style="display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.4fr);gap:16px;align-items:start">
+  <div><h2>Customer conversations (${threads.length})</h2><p class="mute" style="margin-bottom:12px">Unread counts update when the inbox is refreshed or a conversation is opened.</p>${threads.length?threads.map(threadCard).join(''):'<div class="empty">No customer messages yet.</div>'}</div>
+  <div>${convo}</div></div>`;
+},
+
+async history(){const {data,error}=await sb.from('order_events').select('action,detail,actor,at,orders(order_no)').order('at',{ascending:false}).limit(300);if(error)throw error;
+ $('#view').innerHTML=`<p class="mute" style="margin-bottom:10px">The latest 300 actions. "Client" means an action done from the public website.</p><label style="max-width:340px;margin-bottom:12px">Search by order number or action<input id="hf" placeholder="PPH-1001 or payment"></label><div class="wrap"><table><tr><th>When</th><th>Order</th><th>Action</th><th>Details</th><th>By</th></tr>${(data||[]).map(e=>`<tr data-o="${esc(((e.orders?.order_no||'')+' '+e.action).toUpperCase())}"><td>${dt(e.at)}</td><td>${esc(e.orders?.order_no)}</td><td>${esc(e.action.replace(/_/g,' '))}</td><td>${esc(e.detail)}</td><td>${B(e.actor?'Admin':'Client',e.actor?'info':'')}</td></tr>`).join('')}</table></div>`;
+ $('#hf').oninput=ev=>document.querySelectorAll('#view tr[data-o]').forEach(tr=>tr.hidden=!tr.dataset.o.includes(ev.target.value.trim().toUpperCase()))},
+
+async pricing(){const {data,error}=await sb.from('options').select('*').order('category').order('sort');if(error)throw error;
+ const row=o=>`<div class="row" data-k="opt" data-id="${o.id||''}"><label>Category${catSel(o.category,'class="c"')}</label><label>Service and size<input class="l" value="${esc(o.label)}" maxlength="150"></label><label>Price in PHP (blank = quotation)<input class="p" type="number" min="0" step="0.01" value="${o.price??''}"></label><span class="acts" style="justify-content:flex-start">${o.id?B(o.price==null?'Quotation':'Fixed price',o.price==null?'info':'ok'):''}<button data-save>${o.id?'Save Price':'Add'}</button>${o.id?'<button class="d" data-del>Delete</button>':''}</span></div>`;
+ $('#view').innerHTML=cats.map(c=>{const l=(data||[]).filter(o=>o.category==c.id);return `<div class="card"><h3>${esc(c.name)}</h3>${l.map(row).join('')||'<p class="mute">No services yet.</p>'}</div>`}).join('')+`<div class="card"><h3>Add a service or size</h3>${row({category:cats[0]?.id,label:''})}</div>`},
+
+async gallery(){const {data,error}=await sb.from('artworks').select('*').order('created_at',{ascending:false});if(error)throw error;
+ const row=a=>`<div class="card row" style="display:grid" data-k="art" data-id="${a.id}" data-path="${esc(a.image_path)}"><img src="${esc(pub(a.image_path))}" alt="${esc(a.title)}" loading="lazy"><div>${B(a.published?'Published':'Hidden')}</div><label>Category${catSel(a.category,'class="c"')}</label><label>Title<input class="t" value="${esc(a.title)}"></label><label>Description<input class="d" value="${esc(a.description)}"></label><label><span><input class="pub" type="checkbox" ${a.published?'checked':''}> Show on public gallery</span></label><span class="acts" style="justify-content:flex-start"><button data-save>Save</button><button class="d" data-del>Delete</button></span></div>`;
+ $('#view').innerHTML=`<div class="card" style="max-width:560px;display:grid;gap:10px"><h3>Add artwork</h3><label>Category${catSel(cats[0]?.id,'id="aC"')}</label><label>Title<input id="aT" maxlength="100"></label><label>Description (optional)<input id="aD" maxlength="300"></label><label>Photo (compressed automatically)<input id="aF" type="file" accept="image/*"></label><img id="aP" alt="" hidden style="max-width:200px;border-radius:4px"><button id="addArt">Add artwork</button></div>
+ <h2 style="margin-top:20px">Your artworks (${(data||[]).length})</h2>${(data||[]).length?`<div class="gal">${data.map(row).join('')}</div>`:'<div class="empty">No artworks yet. Upload your first one above.</div>'}`;
+ $('#aF').onchange=e=>{const f=e.target.files[0];$('#aP').hidden=!f;if(f)$('#aP').src=URL.createObjectURL(f)}},
+
+async reviews(){const r=await sb.from('reviews').select('*').order('created_at',{ascending:false});if(r.error)throw r.error;L=r.data||[];
+ $('#view').innerHTML=L.length?L.map((x,i)=>`<div class="card"><div class="meta"><b>${esc(x.name)}</b> <span aria-label="${x.stars} stars">${'★'.repeat(x.stars)}</span> ${B(x.approved?'Published':'Hidden')} <span class="mute">${dt(x.created_at)}</span></div><p style="margin:8px 0">${esc(x.body)}</p><button class="${x.approved?'g':''}" data-v="${i}">${x.approved?'Hide from public':'Approve and publish'}</button></div>`).join(''):'<div class="empty">No reviews yet.</div>'}};
+
+/* orders list and detail */
+function match(o){const q=F.q.toLowerCase(),s=o.summary;return (!q||[o.order_no,o.name,o.contact,o.type].join(' ').toLowerCase().includes(q))&&(!F.st||o.status==F.st)&&(!F.pay||s.payment_status==F.pay)&&(!F.dm||o.delivery_method==F.dm)&&(!F.ds||o.delivery_status==F.ds)&&(!F.pre||PRE[F.pre][1](o))}
+function drawList(){const l=L.map((o,i)=>[o,i]).filter(([o])=>match(o));
+ $('#chip').innerHTML=F.pre?`<span class="chip">${esc(PRE[F.pre][0])}<button class="g" data-clr aria-label="Clear filter">Clear</button></span>`:'';
+ $('#olist').innerHTML=l.map(([o,i])=>`<button class="item" data-sel="${o.id}" aria-pressed="${sel==o.id}"><span><b>${esc(o.order_no)}</b> | ${esc(o.name)}</span><small>${esc(o.type)} | ${peso(o.price)} | ${dt(o.created_at)}</small><span class="meta">${B(o.status)}${B(o.summary.payment_status)}${o.delivery_method?B(o.delivery_method+': '+o.delivery_status,'info'):''}${o.cancel_requested_at&&o.status!='Cancelled'?B('Cancel requested','bad'):''}</span></button>`).join('')||'<div class="empty">No orders match these filters.</div>'}
+function drawDet(){const i=L.findIndex(o=>o.id==sel);const el=$('#odet');if(i<0){el.innerHTML='<div class="empty">Select an order to see its details.</div>';return}const o=L[i],s=o.summary,w=warn(o);
+ const done=['Shipped','Delivered'].includes(o.delivery_status);
+ el.innerHTML=`<div class="card order-detail" data-i="${i}"><button class="g" data-back style="margin-bottom:10px">Back to list</button>
+ <div class="detail-intro"><h2>${esc(o.order_no)} ${B(o.status)}</h2>
+ ${o.cancel_requested_at&&o.status!='Cancelled'?`<div class="alert bad"><b>Client asked to cancel:</b> ${esc(o.cancel_reason)}<br>Refund GCash: ${esc(o.refund_gcash||'none given')}. Open "Cancel order" below to decide.</div>`:''}
+ ${w?`<div class="alert">${esc(w)}</div>`:''}
+ <p><b>${esc(o.name)}</b> | ${esc(o.contact)} | order access code <b>${esc(o.access_code)}</b><br><span class="mute">${esc(o.type)} | Size: ${esc(o.size)}${o.subjects?' | Subjects: '+o.subjects:''} | Client's choice: ${esc(o.est_price||'')}<br>${esc(o.address)}${o.note?'<br>'+esc(o.note):''}</span></p>${o.photo_path?`<button class="g" data-ph="${esc(o.photo_path)}" style="margin-top:8px">View reference photo</button>`:''}</div>
+ <div class="sec"><h3>Customer account</h3>
+  ${o.customer_id?`<p>Linked to a customer account${o.customer_email?' · <b>'+esc(o.customer_email)+'</b>':''}.</p>`:`<p>This is a legacy/unlinked order. After the customer creates an account and verifies their email, enter that exact email to attach this order to their account.</p>
+  <div class="row"><label>Verified customer email<input class="customer-email" type="email" autocomplete="off" placeholder="customer@example.com"></label><button class="g" data-act="link-customer">Link order to account</button></div>`}
+ </div>
+ <div class="sec"><h3>Price and artwork</h3><div class="row"><label>Artwork price (PHP)<input class="pr" type="number" min="1" step="0.01" value="${o.price??''}"></label><button data-act="price">Confirm final price</button><label>Artwork status<select class="as">${AS.map(x=>`<option ${x==o.status?'selected':''}>${x}</option>`).join('')}${['Delivered','Cancelled'].includes(o.status)?`<option selected>${o.status}</option>`:''}</select></label><button class="g" data-act="status">Save artwork status</button></div>
+ </div>
+ <div class="sec payment-summary"><h3>Payments and balance</h3>
+  <p class="mute">Payment ${B(s.payment_status)} | Downpayment (50%) ${peso(s.down_required)}, verified ${peso(s.down_verified)} | Balance ${peso(s.balance)} | Shipping ${peso(s.shipping_fee)} | <b style="color:var(--ink)">Still due ${peso(s.total_due)}</b></p>
+  ${o.payments.length?`<p class="payment-history" style="margin-top:8px">${o.payments.map(p=>`${esc(p.purpose)} ${peso(p.amount)} ${B(p.status)}`).join(' &nbsp; ')}</p>`:'<p class="mute">No payment submissions recorded yet.</p>'}</div>
+ <div class="sec"><h3>Delivery</h3><div class="row"><label>Method<select class="dm"><option value="">Not set</option><option ${o.delivery_method=='Local'?'selected':''}>Local</option><option ${o.delivery_method=='LBC'?'selected':''}>LBC</option></select></label><label>Balance payment<select class="pa"><option ${o.pay_arrangement=='GCash'?'selected':''}>GCash</option><option ${o.pay_arrangement=='COD'?'selected':''}>COD</option></select></label><label>LBC shipping fee (PHP)<input class="fe" type="number" min="0" step="0.01" value="${o.shipping_fee??''}"></label><button class="g" data-act="deliv">Save delivery settings</button></div>
+  <p>Delivery status ${B(o.delivery_status)}${o.tracking_no?' | LBC tracking <b>'+esc(o.tracking_no)+'</b>':''}</p>
+  ${o.status=='Cancelled'||o.delivery_status=='Delivered'?'':`<div class="row">${o.delivery_status=='Ready for Dispatch'&&o.delivery_method=='LBC'?'<label>LBC tracking number<input class="tn"></label>':'<input class="tn" hidden>'}${o.delivery_method=='Local'&&o.pay_arrangement=='COD'?'<label><span><input class="co" type="checkbox"> COD cash collected</span></label>':'<input class="co" type="checkbox" hidden>'}${o.delivery_status=='Not Ready'?'<button class="g" data-act="d-Ready for Dispatch">Mark ready for dispatch</button>':''}${o.delivery_status=='Ready for Dispatch'&&o.delivery_method=='LBC'?'<button class="g" data-act="d-Shipped">Mark shipped</button>':''}${['Ready for Dispatch','Shipped'].includes(o.delivery_status)?'<button data-act="d-Delivered">Mark delivered</button>':''}</div>`}</div>
+ <div class="sec"><h3>Reply to client</h3><label>Message shown on their Track order page<input class="rp" value="${esc(o.reply)}" maxlength="1000"></label><button class="g" data-act="reply" style="margin-top:8px">Save client reply</button></div>
+ ${o.status=='Cancelled'?`<div class="sec"><h3>Cancelled</h3><p>${esc(o.cancel_reason)} | Refund ${peso(s.refund_due)} ${B(s.refund_status)}${s.refund_ref?' ref '+esc(s.refund_ref):''}</p>${s.refund_status=='Pending'?`<div class="row"><label>GCash refund reference<input class="rr"></label><span class="mute">Send to ${esc(o.refund_gcash||'(no number given)')}</span><button data-act="refunded">Confirm refund sent</button></div>`:''}</div>`:o.status=='Delivered'||done?'':`<details ${o.cancel_requested_at?'open':''}><summary>Cancel order (cannot be undone)</summary><div class="row"><label>Reason<input class="cr" value="${esc(o.cancel_requested_at?o.cancel_reason:'')}"></label><label>Refund amount (max ${peso(+s.down_verified+ +s.final_verified)})<input class="rf" type="number" min="0" step="0.01" value="0"></label><button class="d" data-act="cancel">Confirm cancellation</button>${o.cancel_requested_at?'<button class="g" data-act="decline">Decline cancellation request</button>':''}</div></details>`}</div>`}
+
+async function addArt(){const f=$('#aF').files[0],title=$('#aT').value.trim();if(!f||!title)return say('Add a title and a photo.',1);
+ const b=$('#addArt');b.disabled=true;b.textContent='Uploading...';const path=crypto.randomUUID()+'.webp';
+ const u=await sb.storage.from('artworks').upload(path,await shrink(f),{contentType:'image/webp'});
+ if(u.error){say(u.error.message,1);b.disabled=false;b.textContent='Add artwork';return}
+ if(ok(await sb.from('artworks').insert({category:$('#aC').value,title,description:$('#aD').value.trim()||null,image_path:path}),'Artwork added.'))render();else{b.disabled=false;b.textContent='Add artwork'}}
+
+$('#nav').onclick=e=>{const t=e.target.dataset.t;if(t){tab=t;if(t!='orders'){F={q:'',st:'',pay:'',dm:'',ds:'',pre:''};sel=null}render()}};
+$('#view').oninput=e=>{const k=e.target.dataset.f;if(k){F[k]=e.target.value;drawList()}};
+$('#view').onclick=async e=>{const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+ if(d.pre){F={q:'',st:'',pay:'',dm:'',ds:'',pre:d.pre};sel=null;tab='orders';return render()}
+ if(d.thread){messageOrderId=d.thread;tab='messages';return render()}
+ if(d.go){tab=d.go;return render()}
+ if('clr' in d){F.pre='';return drawList()}
+ if(d.sel){sel=d.sel;$('#split').classList.add('has');drawList();drawDet();return}
+ if('back' in d){sel=null;$('#split').classList.remove('has');drawList();drawDet();return}
+ if(d.ph){const {data}=await sb.storage.from('references').createSignedUrl(d.ph,300);if(data)open(data.signedUrl);return}
+ if(d.rc){const {data}=await sb.storage.from('receipts').createSignedUrl(d.rc,300);if(data)open(data.signedUrl);return}
+ if(d.vp){let reason=null;
+  if(d.vp=='verify'){if(!await ask('Verify this payment?','Only continue if the money is already in your GCash. This cannot be undone.','Yes, I received it'))return}
+  else{reason=await ask('Reject this payment?','The client will see your reason and can submit again.','Reject payment',true);if(!reason)return}
+  b.disabled=true;if(ok(await sb.rpc('admin_review_payment',{p_id:d.id,p_action:d.vp,p_reason:reason}),'Payment '+(d.vp=='verify'?'verified.':'rejected.')))render();else b.disabled=false;return}
+ if(d.v){const x=L[d.v];b.disabled=true;if(ok(await sb.from('reviews').update({approved:!x.approved}).eq('id',x.id),x.approved?'Review hidden.':'Review published.'))render();else b.disabled=false;return}
+ if(b.id=='addArt')return addArt();
+ const card=b.closest('.card[data-i]');
+ if(card&&d.act){const o=L[card.dataset.i],q=x=>card.querySelector(x),a=d.act;let x;
+  if(a=='price'){const v=+q('.pr').value;if(!(v>0))return say('Enter a price above zero.',1);x=await sb.rpc('admin_confirm_order',{p_id:o.id,p_price:v})}
+  else if(a=='status')x=await sb.rpc('admin_set_status',{p_id:o.id,p_status:q('.as').value});
+  else if(a=='deliv'){const m=q('.dm').value;if(!m)return say('Choose a delivery method.',1);const f=q('.fe').value;x=await sb.rpc('admin_set_delivery',{p_id:o.id,p_method:m,p_arr:q('.pa').value,p_fee:f===''?null:+f})}
+  else if(a=='reply')x=await sb.rpc('admin_set_reply',{p_id:o.id,p_reply:q('.rp').value});
+  else if(a=='link-customer'){const email=q('.customer-email')?.value.trim();if(!email)return say('Enter the customer account email.',1);x=await sb.rpc('admin_link_order_to_customer',{p_order_id:o.id,p_customer_email:email})}
+  else if(a=='cancel'){if(!await ask('Cancel this order?','The order will be closed and pending payments rejected. A refund can only be up to the verified payments.','Yes, cancel order',false,'No, keep it'))return;x=await sb.rpc('admin_cancel_order',{p_id:o.id,p_reason:q('.cr').value,p_refund:+q('.rf').value||0})}
+  else if(a=='decline'){const n=await ask('Decline the cancellation request?','Write a short message. The client will see it as your reply.','Decline request',true);if(!n)return;x=await sb.rpc('admin_decline_cancel',{p_id:o.id,p_note:n})}
+  else if(a=='refunded')x=await sb.rpc('admin_mark_refunded',{p_id:o.id,p_ref:q('.rr').value.trim()});
+  else if(a.startsWith('d-')){const to=a.slice(2);if(to!='Ready for Dispatch'&&!await ask('Mark this order as '+to+'?',to=='Delivered'?'This closes the order.':'The client will see the tracking number.','Yes, continue'))return;x=await sb.rpc('admin_set_delivery_status',{p_id:o.id,p_to:to,p_tracking:q('.tn').value.trim()||null,p_collected:q('.co').checked})}
+  if(x){b.disabled=true;if(ok(x,'Saved.'))render();else b.disabled=false}return}
+ const r=b.closest('.row[data-k]');if(!r)return;const k=r.dataset.k,id=r.dataset.id,t=k=='art'?'artworks':'options',q=s=>r.querySelector(s);
+ if('del' in d){if(!await ask('Delete this entry?',k=='art'?'The artwork and its image will be removed.':'Clients will no longer see this service.','Yes, delete'))return;if(k=='art')await sb.storage.from('artworks').remove([r.dataset.path]);if(ok(await sb.from(t).delete().eq('id',id),'Deleted.'))render();return}
+ if('save' in d){let rec;
+  if(k=='opt'){const p=q('.p').value;rec={category:q('.c').value,label:q('.l').value.trim(),price:p===''?null:+p};if(!rec.label)return say('Enter a service and size.',1);if(rec.price!=null&&(isNaN(rec.price)||rec.price<0))return say('Enter a valid price.',1)}
+  else{rec={category:q('.c').value,title:q('.t').value.trim(),description:q('.d').value.trim()||null,published:q('.pub').checked};if(!rec.title)return say('Enter a title.',1)}
+  b.disabled=true;const res=id?await sb.from(t).update(rec).eq('id',id):await sb.from(t).insert(rec);b.disabled=false;
+  if(ok(res,k=='opt'?'Price saved.':'Saved.')&&(!id||k=='art'))render()}};
+
+$('#view').addEventListener('submit',async e=>{
+ if(e.target.id!=='adminMessageForm')return;
+ e.preventDefault();
+ const form=e.target,body=new FormData(form).get('body');
+ const btn=form.querySelector('button[type="submit"]');btn.disabled=true;btn.textContent='Sending...';
+ const {error}=await sb.rpc('admin_send_message',{p_order_id:form.dataset.orderId,p_body:String(body||'').trim()});
+ if(error){say('Could not send reply: '+error.message,1);btn.disabled=false;btn.textContent='Send reply';return}
+ messageOrderId=form.dataset.orderId;await render();say('Reply sent to customer.');
+});
+
+start();
+</script></body></html>

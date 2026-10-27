@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="Handmade portraits, landscapes, eye keychains, paintings, and custom artworks by Jake Balidio. Order online and track your commission." name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Art Commission PH | Custom Artworks</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&amp;family=Figtree:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#1a1917;--panel:#23211e;--line:#3a3732;--ink:#f1ebdd;--mute:#a39c8e;--gold:#cfae6f;--cream:#f1ebdd;--cink:#2b2823;--cmute:#6b6459;--ok:#8fbf9a;--bad:#e0968a;--r:4px;--serif:'Fraunces',Georgia,serif;--sans:'Figtree',system-ui,sans-serif}
+[hidden]{display:none!important}*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;z-index:50;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit}h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.1}h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:.6rem}h3{font-size:1.3rem}
+section{padding:clamp(64px,9vw,112px) max(6vw,calc((100vw - 1180px)/2))}
+section.cream{background:var(--cream);color:var(--cink)}section.cream .lead,section.cream .note{color:var(--cmute)}
+.lead{color:var(--mute);max-width:58ch;margin-bottom:2.2rem}.note{margin-top:22px;color:var(--mute);font-style:italic;max-width:70ch}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+nav{position:sticky;top:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:12px max(6vw,calc((100vw - 1180px)/2));background:rgba(26,25,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font:600 1.35rem var(--serif);text-decoration:none}.logo i{font-weight:300;color:var(--gold)}
+#menu{display:flex;gap:26px;align-items:center;font-size:.92rem}#menu a{text-decoration:none;color:var(--mute)}#menu a:hover{color:var(--ink)}#menu a.btn{color:#1a1917}#menu a.btn:hover{color:#fffdf8;background:var(--action-primary-hover);filter:none}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);width:44px;height:44px;border-radius:var(--r);cursor:pointer;font-size:1.2rem}
+.btn{display:inline-block;background:var(--gold);color:#1a1917;border:0;padding:13px 26px;min-height:44px;font:600 .95rem var(--sans);cursor:pointer;text-decoration:none;border-radius:var(--r);transition:transform .2s,filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.07)}.btn:disabled{opacity:.6;cursor:wait;transform:none}.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}.btn.sm{padding:8px 16px;min-height:36px}
+.eyebrow{font:500 .78rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,72px);align-items:center;min-height:86vh}
+.hero h1{font-size:clamp(2.8rem,7.5vw,5.8rem);letter-spacing:-.02em;margin-bottom:1.4rem}.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p{color:var(--mute);max-width:46ch;margin-bottom:2rem}.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.frame{position:relative;padding:14px;background:#d9d2c3;box-shadow:0 30px 80px #000a;transform:rotate(1.5deg);animation:settle 1.2s cubic-bezier(.2,.7,.2,1) both;max-width:460px;justify-self:center;width:100%}
+@keyframes settle{from{opacity:0;transform:rotate(-3deg) translateY(24px)}}
+.me{position:absolute;top:-24px;right:-10px;width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);background:var(--panel);box-shadow:0 10px 30px #000a;z-index:2}
+.frame svg,.frame>img:not(.me){display:block;width:100%;height:auto}
+.frame .tag{position:absolute;bottom:-18px;left:20px;background:var(--bg);border:1px solid var(--line);padding:6px 14px;font:italic 300 .9rem var(--serif)}
+.tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}.tabs button{background:none;border:1px solid var(--line);color:var(--mute);padding:8px 18px;min-height:40px;border-radius:40px;cursor:pointer;font:500 .88rem var(--sans)}.tabs button:hover{color:var(--ink)}.tabs button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:24px}
+.art{background:#d9d2c3;padding:10px;cursor:pointer;transition:transform .3s,box-shadow .3s}.art:hover{transform:translateY(-4px);box-shadow:0 18px 40px #0008}
+.art img,.art svg{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}.art p{color:#2b2823;font:italic 300 1rem var(--serif);padding:10px 2px 2px}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.pc{background:#fffdf7;border:1px solid #d9d2c3;padding:26px;border-radius:var(--r)}.pc h3{margin-bottom:6px;color:var(--cink)}.pc ul{list-style:none;padding:0}.pc li{padding:10px 0;border-top:1px solid #e4ddcd;color:#4a453d;font-size:.95rem}.pp{color:#7d5f22;font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;counter-reset:s}.steps div{border-top:1px solid var(--line);padding-top:18px}.steps b{font:italic 300 2.6rem var(--serif);color:var(--gold);display:block;line-height:1}.steps h3{margin:8px 0 6px}.steps p{color:var(--mute);font-size:.95rem}
+form,.box{background:var(--panel);border:1px solid var(--line);padding:clamp(20px,4vw,34px);display:grid;gap:16px;max-width:680px;border-radius:var(--r)}
+.fh{font-size:1.15rem;color:var(--gold);padding-top:6px;border-top:1px solid var(--line)}form>.fh:first-child{border:0;padding:0}.hint{font-size:.9rem;color:var(--mute);border-left:2px solid var(--gold);padding-left:12px}
+label{display:grid;gap:6px;font-size:.86rem;color:var(--mute)}
+input,select,textarea{background:var(--bg);border:1px solid var(--line);color:var(--ink);padding:12px;font:inherit;font-size:16px;border-radius:var(--r);width:100%}
+input[type=file]{padding:9px}input:invalid:not(:placeholder-shown){border-color:var(--bad)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.msg{padding:14px;border:1px solid var(--gold);color:var(--gold);display:none;border-radius:var(--r)}.msg.show{display:block}
+#trackOut p{margin-top:10px}#trackOut form{max-width:none;background:var(--bg)}
+.st{display:inline-block;padding:3px 11px;border:1px solid var(--line);border-radius:40px;font-size:.82rem;margin:0 6px 6px 0}.st small{color:var(--mute);margin-right:3px}.st.ok{border-color:var(--ok);color:var(--ok)}.st.bad{border-color:var(--bad);color:var(--bad)}
+.tl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:16px 0}.tl li{border-top:3px solid var(--line);padding-top:6px;font-size:.8rem;color:var(--mute)}.tl li.done{border-color:var(--gold);color:var(--ink)}.tl li.cur{border-color:var(--ink);color:var(--ink);font-weight:600}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-bottom:36px}
+.rev blockquote{background:#fffdf7;border:1px solid #d9d2c3;border-top:3px solid var(--gold);padding:22px;font:300 1.1rem/1.5 var(--serif);border-radius:var(--r);color:var(--cink)}.rev cite{display:block;margin-top:10px;font:500 .85rem var(--sans);color:var(--cmute);font-style:normal}
+footer{border-top:1px solid var(--line);padding:42px max(6vw,calc((100vw - 1180px)/2));color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;font-size:.92rem}footer b{color:var(--ink);font:600 1.1rem var(--serif)}footer a{text-decoration:none;margin-right:14px}footer a:hover{color:var(--ink)}
+dialog#dlg{background:var(--cream);color:var(--cink);padding:0;border:0;width:min(780px,94vw);max-height:92vh;overflow:auto;border-radius:var(--r)}dialog::backdrop{background:#000d}
+#dlgArt img,#dlgArt svg{display:block;width:100%;max-height:68vh;object-fit:contain;background:#d9d2c3}.cap{padding:16px 22px 24px}.cap small{color:var(--cmute)}.cap p{margin-top:8px}
+.x{position:absolute;top:10px;right:10px;width:42px;height:42px;border-radius:50%;background:#1a1917d9;color:#fff;font-size:1.5rem;line-height:1;border:0;cursor:pointer;padding:0}
+@media(max-width:860px){.hero{grid-template-columns:1fr;min-height:0}.burger{display:block}#menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 6vw 16px}#menu.open{display:flex}#menu a{padding:12px 0;width:100%;font-size:1rem}}
+@media(max-width:560px){.two{grid-template-columns:1fr}}
+/* Art Commission PH — refreshed warm editorial design system */
+:root{
+ --bg:#f7f2e9;--panel:#fffdf8;--line:#e2d6c6;--ink:#29231e;--mute:#6d6257;
+ --gold:#b56d43;--cream:#efe4d4;--cink:#29231e;--cmute:#6d6257;--ok:#397a50;--bad:#a53e35;
+ --r:12px;--serif:'Fraunces',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;
+}
+body{background:var(--bg);color:var(--ink);font-size:17px;line-height:1.7}
+body::before{opacity:.025;z-index:1}
+nav{background:rgba(247,242,233,.94);border-bottom:1px solid var(--line);box-shadow:0 6px 24px #39291a0b}
+.logo{font-size:1.5rem;color:var(--ink)}
+.logo i{color:var(--gold)}
+#menu a{color:#6d6257;font-size:1rem}
+#menu a:hover{color:var(--gold)}
+.btn{background:var(--gold);color:#fffdf8;border-radius:999px;padding:14px 28px;font-size:1rem;box-shadow:0 7px 18px #8e4d2a18}
+.btn:hover{filter:brightness(1.04);box-shadow:0 10px 24px #8e4d2a24}
+.btn.ghost{color:var(--ink);border-color:#cdbba7;background:rgba(255,253,248,.58);box-shadow:none}
+.btn.ghost:hover{background:#fffdf8}
+section{position:relative;z-index:0;padding:clamp(72px,9vw,116px) max(6vw,calc((100vw - 1180px)/2))}
+section:not(.cream){background:var(--bg);color:var(--ink)}
+section.cream{background:#eee2d1;color:var(--ink)}
+section.cream .lead,section.cream .note{color:var(--cmute)}
+.hero{min-height:78vh;gap:clamp(36px,7vw,88px)}
+.hero h1{font-size:clamp(3.1rem,7.3vw,6.1rem);letter-spacing:-.04em;line-height:1.02}
+.hero h1 em{color:var(--gold)}
+.hero p{color:var(--mute);font-size:1.1rem;max-width:50ch}
+.eyebrow{color:#9a542f;font-size:.82rem;font-weight:600}
+.frame{border-radius:8px;box-shadow:0 26px 65px #4a33221f;animation:settle 1.2s cubic-bezier(.2,.7,.2,1) both}
+.frame .tag{background:#29231e;color:#fff8ed;border:1px solid #574438;border-radius:999px;padding:8px 16px}
+.me{border-color:#fff8ed}
+h2{font-size:clamp(2.2rem,4.7vw,3.6rem);letter-spacing:-.025em}
+h3{font-size:1.4rem}
+.lead{font-size:1.08rem;max-width:64ch}
+.tabs button{font-size:.96rem;padding:10px 20px;border-radius:999px;border-color:#d6c8b6;color:#6d6257}
+.tabs button.on{background:#29231e;color:#fff8ed;border-color:#29231e}
+.grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px}
+.art{border-radius:10px;padding:12px;background:#e6d9c8;box-shadow:0 8px 25px #4a33220b}
+.art img,.art svg{border-radius:5px}
+.art p{font-size:1.1rem;color:#29231e;padding:12px 4px 4px}
+.price{gap:22px}
+.pc{border-color:#dfd0bd;padding:30px;border-radius:14px;box-shadow:0 12px 32px #4a33220a}
+.pc h3{font-size:1.45rem}
+.pc li{font-size:1rem;line-height:1.6}
+.pp{color:#96512f}
+.steps{gap:30px}
+.steps div{border-top:2px solid #d9c8b5;padding-top:22px}
+.steps b{font-size:3rem;color:var(--gold)}
+.steps p{font-size:1rem;color:var(--mute)}
+form,.box{background:#2c2722;border:1px solid #443a31;border-radius:16px;padding:clamp(22px,4vw,38px);box-shadow:0 18px 44px #38261912}
+form label,.box label{color:#d8cbbd;font-size:.96rem}
+input,select,textarea{border-radius:9px;padding:13px 14px;background:#211d19;border-color:#55483b;color:#fff8ed;font-size:16px}
+input:focus,select:focus,textarea:focus{border-color:#d69b72;outline:3px solid #d69b7228}
+.fh{font-size:1.25rem;color:#e2ad83}
+.hint{font-size:.98rem;color:#e0d2c2;border-left-color:#d69b72}
+.note{font-size:.98rem}
+.msg{border-radius:10px;color:#f3c49d}
+#track .box{max-width:760px}
+.rev blockquote{border-radius:12px;border-top-width:4px;padding:26px;font-size:1.18rem;box-shadow:0 8px 24px #4a33220b}
+footer{color:#cfc2b3;background:#29231e;border-top:0;padding-top:48px;padding-bottom:48px}
+footer b{color:#fff8ed}
+footer a:hover{color:#e2ad83}
+dialog#dlg{border-radius:16px;box-shadow:0 30px 90px #0005}
+.x{border-radius:50%;box-shadow:0 4px 16px #0003}
+:focus-visible{outline:3px solid #b56d43;outline-offset:3px}
+@media(max-width:860px){
+ nav{padding-top:10px;padding-bottom:10px}
+ #menu{background:#f7f2e9;border-bottom-color:var(--line)}
+ #menu a{color:var(--ink)}
+ .hero{padding-top:64px;padding-bottom:76px}
+ .hero h1{font-size:clamp(2.8rem,11vw,4.6rem)}
+ .frame{max-width:420px}
+}
+@media(max-width:560px){
+ body{font-size:16px}
+ section{padding-top:62px;padding-bottom:62px}
+ .grid{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+ .pc{padding:22px}
+ form,.box{padding:20px}
+ .btn{padding:13px 20px}
+}
+
+/* Stage 2 refinements: consistent actions, forms, and responsive details */
+:root{
+  --action-primary:#a95f38;
+  --action-primary-hover:#8f4c2c;
+  --action-border:#cdbba7;
+  --danger:#a53e35;
+  --focus-ring:#b56d43;
+  --surface-raised:#fffdf8;
+}
+.btn{
+  min-height:46px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border:1px solid transparent;
+  border-radius:10px;
+  padding:12px 22px;
+  font-weight:600;
+  line-height:1.25;
+  text-align:center;
+  box-shadow:0 4px 12px #8e4d2a12;
+  transition:background-color .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease;
+}
+.btn:hover{background:var(--action-primary-hover);color:#fffdf8;filter:none;box-shadow:0 6px 16px #8e4d2a1c;transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn:disabled{opacity:.58;box-shadow:none;cursor:wait}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--action-border);box-shadow:none}
+.btn.ghost:hover{background:#fffdf8;border-color:#bca58d;color:var(--ink);filter:none}
+.btn.sm{min-height:40px;padding:9px 15px;font-size:.94rem}
+#menu a.btn{color:#fffdf8}
+#menu a.btn.ghost{color:var(--ink)}
+.tabs button{min-height:42px;border-radius:10px;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.tabs button:focus-visible,.burger:focus-visible,.art:focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px}
+.art{border:1px solid #ded0be;box-shadow:0 5px 18px #4a33220a}
+.art:hover{background:#e8dfd1;box-shadow:0 12px 26px #4a33221a}.art:hover p{color:#29231e}
+.art:focus-visible{transform:translateY(-2px)}
+.pc{box-shadow:0 8px 24px #4a33220a}
+.pc li{padding:12px 0}
+form,.box{gap:18px}
+form label,.box label{line-height:1.45}
+.fh{margin-top:4px}
+.hint{background:#3a3028;padding:12px 14px;border-radius:0 8px 8px 0}
+#fPrice{background:#fff8ef;border:1px solid #e7d4c0;border-radius:9px;padding:12px 14px;color:#654a37}
+#trackOut{overflow-wrap:anywhere}
+#trackOut .pf,#trackOut .df,#trackOut .cf{max-width:none;border-radius:12px;margin-top:18px}
+#trackOut .pf p,#trackOut .df p,#trackOut .cf p{line-height:1.55}
+#trackOut .st{font-size:.86rem;padding:5px 10px}
+#trackOut .tl li{font-size:.88rem;line-height:1.4}
+.msg{background:#332b24;border-radius:10px;line-height:1.5}
+.msg.show{display:block}
+#orderForm>.btn,#revForm>.btn{justify-self:start;min-width:160px}
+#track .box{max-width:760px}
+.hero-placeholder{display:grid;grid-template-columns:1fr;gap:12px;justify-items:center;text-align:center;padding:clamp(28px,6vw,58px) 24px;background:linear-gradient(145deg,#e8d8c5,#f9f1e6);color:#4b382a;min-height:340px;align-content:center}.hero-placeholder-art{width:clamp(120px,22vw,210px);aspect-ratio:4/5;border:1px solid #bca58d;background:repeating-linear-gradient(135deg,#d6c3ad 0 3px,#efe4d4 3px 7px);display:grid;place-items:center;font:italic 300 clamp(4rem,10vw,7rem) var(--serif);color:#9a7658;box-shadow:8px 10px 0 #c4aa8f}.hero-placeholder p{margin:10px 0 0;color:#654a37;font-size:.95rem}#dlg{color:var(--cink)}
+#dlg .x{min-height:42px;min-width:42px}
+footer a{display:inline-block;padding:5px 0}
+@media(max-width:860px){
+  #menu{box-shadow:0 14px 24px #39291a12}
+  #menu a.btn{width:100%;justify-content:center}
+  .hero .acts .btn{min-width:160px}
+}
+@media(max-width:560px){
+  .hero .acts{display:grid;grid-template-columns:1fr}
+  .hero .acts .btn{width:100%}
+  #orderForm>.btn,#revForm>.btn{width:100%}
+  .tabs{gap:7px}
+  .tabs button{padding:9px 13px}
+  .pc{padding:20px}
+  #trackOut .pf .btn,#trackOut .df .btn,#trackOut .cf .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+  .btn,.tabs button,.art{transition:none!important}
+}
+
+@media(prefers-reduced-motion:reduce){.frame{animation:none!important}}
+
+
+/* GCash payment panel — styled to match the selected warm editorial design */
+.gcash-payment{border:1px solid var(--line);padding:clamp(16px,3vw,28px)!important;background:var(--panel)!important;box-shadow:0 12px 32px #4a33220a!important}
+.gcash-heading h3{font:600 clamp(1.5rem,3vw,2rem)/1.15 var(--serif);margin:4px 0 8px;color:var(--ink)}
+.gcash-heading>p:last-child{color:var(--mute);line-height:1.6;margin-bottom:18px}
+.gcash-recipient{display:grid;grid-template-columns:minmax(220px, min(42%, 340px)) minmax(0,1fr);gap:clamp(18px,3vw,30px);align-items:center;padding:clamp(14px,2.5vw,24px);background:#eee2d1;border:1px solid #dfd0bd;border-radius:12px}
+.gcash-qr-wrap{background:#fff;border-radius:12px;padding:12px;text-align:center;box-shadow:0 5px 18px #4a33220a;border:1px solid #eee8dd}
+.gcash-qr{display:block;width:100%;height:auto;max-width:420px;aspect-ratio:1;object-fit:contain;margin:0 auto}
+.gcash-transfer-note{font-size:.8rem;color:#6b7280;margin:8px 0 0}
+.gcash-amount-label{font-size:.9rem;color:#4f5d73;margin:0 0 4px}
+.gcash-amount{font:600 clamp(1.8rem,4vw,2.5rem)/1.1 var(--serif);color:#96512f;margin:0 0 18px;overflow-wrap:anywhere}
+.gcash-name{font-weight:700;font-size:1.12rem;color:#202b3b;margin:0 0 4px}
+.gcash-number{font-size:1.12rem;letter-spacing:.035em;color:#26364e;margin:0 0 12px;font-variant-numeric:tabular-nums}
+.gcash-copy{min-height:42px;margin-bottom:6px}
+.gcash-copy-feedback{display:block;min-height:1.35em;color:var(--ok);font-size:.9rem;margin:2px 0 10px}
+.gcash-instructions{font-size:.94rem;line-height:1.6;color:#46556b;margin:8px 0 0}
+.gcash-submit-intro{margin:20px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+.gcash-submit-intro h4{font:600 1.2rem/1.3 var(--serif);margin:0 0 6px}
+.gcash-submit-intro p{color:var(--mute);line-height:1.6;margin:0}
+@media(max-width:640px){.gcash-recipient{grid-template-columns:1fr}.gcash-qr-wrap{width:min(100%,380px);justify-self:center}.gcash-qr{width:100%;max-width:380px}.gcash-details{padding:2px 2px 0}.gcash-copy{width:100%}}
+@media(min-width:641px) and (max-width:820px){.gcash-recipient{grid-template-columns:minmax(180px,40%) minmax(0,1fr);gap:16px}}
+.gcash-payment .section-label{font:600 .75rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#96512f;margin-bottom:5px}
+.gcash-payment .gcash-amount-label{color:#6d6257}
+.gcash-payment .gcash-name,.gcash-payment .gcash-number{color:#29231e}
+.gcash-payment .gcash-instructions{color:#4a453d}
+.gcash-payment .gcash-copy-feedback{color:#397a50}
+.gcash-payment .gcash-transfer-note{color:#6b6459}
+.gcash-payment .gcash-submit-intro{border-top-color:var(--line)}
+.gcash-payment .gcash-submit-intro p{color:var(--mute)}
+@media(max-width:640px){
+  .gcash-recipient{grid-template-columns:1fr}
+  .gcash-qr-wrap{width:min(100%,380px);justify-self:center}
+  .gcash-qr{width:100%;max-width:380px}
+  .gcash-details{padding:2px 2px 0}
+  .gcash-copy{width:100%}
+}
+@media(min-width:641px) and (max-width:820px){
+  .gcash-recipient{grid-template-columns:minmax(180px,40%) minmax(0,1fr);gap:16px}
+}
+
+
+/* Customer-account portal */
+.auth-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:960px}
+.account-card{background:#fffdf8;color:#29231e;border:1px solid #dfd2c1;border-radius:14px;padding:clamp(18px,3vw,28px);display:grid;gap:14px;max-width:960px}
+.account-card h3{color:#29231e}
+.account-card label{color:#6d6257}
+.account-card input,.account-card textarea{background:#fff;color:#29231e;border:1px solid #dfd2c1}
+.account-user-row{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.text-btn{border:0;background:transparent;color:#92502f;box-shadow:none;padding:4px 0;min-height:auto;justify-content:flex-start;text-decoration:underline}
+.orders-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px;margin:16px 0 24px}
+.order-list-card{display:grid;text-align:left;gap:7px;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:18px;border-radius:10px;box-shadow:none}
+.order-list-card[aria-pressed="true"]{border-color:var(--gold);box-shadow:0 0 0 2px rgba(207,174,111,.18)}
+.order-list-card small{color:var(--mute)}
+.customer-messages{margin-top:28px;padding:clamp(16px,3vw,24px);background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--ink)}
+.customer-thread{display:grid;gap:10px;margin:14px 0;max-height:420px;overflow:auto}
+.customer-message{max-width:min(90%,620px);padding:12px 14px;border-radius:12px;background:#302d28;color:var(--ink);justify-self:start;overflow-wrap:anywhere}
+.customer-message.mine{background:#f2e9dd;color:#29231e;justify-self:end}
+.customer-message small{display:block;opacity:.72;margin-bottom:4px}
+.customer-messages textarea{width:100%;min-height:92px;background:#fffdf8;color:#29231e;border:1px solid var(--line)}
+#trackOut{margin-top:14px}
+#trackOut .pf,#trackOut .df,#trackOut .cf{max-width:100%}
+#trackOut .gcash-payment{color:#29231e}
+#trackOut .gcash-payment .gcash-qr{width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+@media(max-width:720px){.auth-grid{grid-template-columns:1fr}.account-user-row{align-items:flex-start;flex-direction:column}.account-user-row .btn{width:100%}}
+
+
+/* Readability fixes for order status, messages, and GCash instructions */
+#trackOut{color:var(--ink);line-height:1.65}
+#trackOut>p{color:var(--ink);line-height:1.65;margin:12px 0}
+#trackOut .tl li{color:var(--mute)}
+#trackOut .tl li.done,#trackOut .tl li.cur{color:var(--ink)}
+#trackOut .gcash-payment{color:var(--cink);background:#fffdf8!important;border-color:#dfd2c1}
+#trackOut .gcash-payment label{color:#6d6257}
+#trackOut .gcash-payment input,#trackOut .gcash-payment select,#trackOut .gcash-payment textarea{background:#fff;color:#29231e;border-color:#dfd2c1}
+#trackOut .gcash-payment .gcash-copy{color:#29231e}
+#trackOut .gcash-payment .gcash-copy:hover{color:#fff}
+#trackOut .gcash-qr{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+#trackOut .customer-messages{color:var(--ink)}
+#trackOut .customer-messages .hint{color:var(--mute)}
+
+
+/* Final accessibility pass: readable feedback, message bubbles, and narrow screens */
+.msg{
+  display:none;
+  max-width:960px;
+  margin-top:12px;
+  padding:14px 16px;
+  border:1px solid #d9bd8d;
+  border-radius:10px;
+  background:#fff6e6;
+  color:#59421f;
+  line-height:1.55;
+  overflow-wrap:anywhere;
+  white-space:pre-wrap;
+}
+.msg.show{display:block}
+.msg[data-state="error"]{background:#fff0ee;border-color:#d9a49e;color:#7d2822}
+.msg[data-state="success"]{background:#edf7ef;border-color:#8db69a;color:#245a35}
+.msg[data-state="info"]{background:#edf5fc;border-color:#a8c1d9;color:#294d6d}
+#accountMsg{width:100%;font-size:1rem}
+#accountMsg[data-state="error"]{box-shadow:inset 4px 0 #a53e35}
+#accountMsg[data-state="success"]{box-shadow:inset 4px 0 #397a50}
+.customer-message{background:#f0e5d7;color:#29231e;border:1px solid #dfd2c1}
+.customer-message.mine{background:#e8f2e9;color:#244b30;border-color:#b9d2be}
+.customer-message small{opacity:1;color:#5e554c;font-size:.82rem;line-height:1.4}
+.customer-messages .hint{background:#f2e9dd;color:#4f463d;border-left-color:#b56d43}
+.account-card .hint{color:#4f463d;background:#f2e9dd;border-left-color:#b56d43}
+input,select,textarea{min-width:0}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #92502f;outline-offset:3px}
+@media(max-width:720px){
+  .auth-grid{grid-template-columns:minmax(0,1fr)}
+  .account-card{width:100%;padding:20px}
+  .msg{font-size:.98rem;padding:13px 14px}
+  .customer-message{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* One-card customer authentication flow */
+.auth-switcher{width:min(100%,540px);margin:0 auto;display:grid;gap:0;background:#fffdf8;border:1px solid #dfd2c1;border-radius:18px;box-shadow:0 18px 42px rgba(57,41,26,.09);overflow:hidden;color:#29231e}
+.auth-switcher[hidden],.auth-form[hidden]{display:none!important}
+.auth-switcher-header{text-align:center;padding:30px 28px 14px}
+.auth-switcher-header .eyebrow{display:block;margin-bottom:9px;font-size:.75rem;font-weight:700;letter-spacing:.15em;color:#9a542f}
+.auth-switcher-header h3{font:500 clamp(1.8rem,4vw,2.4rem)/1.2 var(--serif);margin:0 0 9px;color:#29231e}
+.auth-switcher-header p{margin:0;color:#62584d;font-size:.98rem;line-height:1.55}
+.auth-mode-tabs{display:grid;grid-template-columns:1fr 1fr;margin:18px 28px 0;padding:5px;border-radius:12px;background:#f2e9dd;gap:5px}
+.auth-mode-tab{border:0;border-radius:9px;min-height:46px;background:transparent;color:#675749;box-shadow:none;font-weight:600;cursor:pointer}
+.auth-mode-tab:hover{background:#e9dccb;color:#29231e;box-shadow:none}
+.auth-mode-tab.active,.auth-mode-tab.active:hover{background:#fffdf8;color:#884629;box-shadow:0 2px 8px #39291a18}
+.auth-switcher .auth-form{margin:0;max-width:none;width:100%;box-shadow:none;border:0;border-radius:0;background:transparent;padding:22px 28px 30px;color:#29231e;gap:15px}
+.auth-switcher .auth-form-heading{display:none}
+.auth-switcher .auth-form label{color:#5d5043;font-size:.94rem}
+.auth-switcher .auth-form input{background:#fff;color:#29231e;border:1px solid #cdbba7}
+.auth-switcher .auth-form input:focus{border-color:#a95f38;outline:3px solid #a95f3833}
+.auth-switcher .auth-form>.btn{width:100%;margin-top:3px}
+.auth-form-bottom{display:flex;justify-content:flex-end}
+.auth-bottom-prompt{text-align:center;color:#62584d;font-size:.93rem;line-height:1.65;padding-top:9px;border-top:1px solid #eadfce}
+.auth-inline-link{background:none;border:0;box-shadow:none;color:#914b2b;text-decoration:underline;text-underline-offset:3px;font-size:inherit;padding:2px 4px;min-height:32px;font-weight:700;cursor:pointer}
+.auth-inline-link:hover{background:none;border:0;box-shadow:none;color:#6e321a}
+.auth-switcher .text-btn{color:#914b2b;font-weight:600}
+#accountMsg{width:min(100%,540px);margin:16px auto 0}
+@media(max-width:560px){.auth-switcher-header{padding:24px 20px 10px}.auth-mode-tabs{margin:14px 18px 0}.auth-switcher .auth-form{padding:20px 18px 24px}.auth-mode-tab{font-size:.92rem}}
+
+/* Navigation refinement: content links are distinct from account utilities and CTA. */
+.site-header{display:flex;align-items:center;gap:clamp(18px,2.2vw,38px);padding:13px max(4vw,calc((100vw - 1420px)/2));min-height:82px}
+.site-header .logo{flex:none;white-space:nowrap;font-size:clamp(1.17rem,1.55vw,1.55rem);letter-spacing:-.035em}
+.site-header .nav-layout{flex:1;display:flex;align-items:center;justify-content:space-between;gap:clamp(14px,2vw,34px);min-width:0}
+.site-header .nav-primary,.site-header .nav-actions{display:flex;align-items:center;gap:clamp(14px,1.6vw,27px)}
+.site-header .nav-primary{margin-left:auto}
+.site-header .nav-actions{margin-left:auto;gap:clamp(10px,1.1vw,20px)}
+.site-header #menu a{font-size:.93rem;text-decoration:none;white-space:nowrap;color:#63594e;font-weight:500}
+.site-header #menu a:hover{color:#954f2b}
+.site-header #menu a:focus-visible{border-radius:6px}
+.site-header .nav-account{display:inline-flex;align-items:center;gap:8px;padding:9px 4px;color:#29231e!important;font-weight:650!important}
+.site-header .nav-account svg{flex:none;stroke:#96512f}
+.site-header .nav-orders[hidden]{display:none!important}
+.site-header #menu .nav-commission{color:#fffdf8!important;background:#a95f38;border-radius:11px;min-height:44px;padding:11px 18px;font-weight:700!important;box-shadow:none;white-space:nowrap}
+.site-header #menu .nav-commission:hover{color:#fff!important;background:#8f4c2c}
+.site-header .burger{display:none;align-items:center;justify-content:center;gap:9px;width:auto;padding:9px 14px;font-weight:650;font-size:.91rem;border-radius:10px;border-color:#cdbba7}
+.site-header .burger-label{font-family:var(--sans)}
+@media(max-width:1180px){
+ .site-header{min-height:75px;padding:10px 4vw;gap:16px}
+ .site-header .burger{display:inline-flex;margin-left:auto}
+ .site-header #menu{position:absolute;top:100%;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;padding:12px 4vw 22px;background:#f7f2e9;border-bottom:1px solid #dfd2c1;box-shadow:0 18px 24px #39291a18}
+ .site-header #menu.open{display:flex}
+ .site-header .nav-primary,.site-header .nav-actions{display:flex;flex-direction:column;align-items:stretch;gap:0;margin:0}
+ .site-header .nav-actions{border-top:1px solid #dfd2c1;margin-top:8px;padding-top:8px}
+ .site-header #menu a:not(.nav-commission){display:flex;min-height:45px;align-items:center;padding:10px 8px;width:100%;font-size:1rem}
+ .site-header #menu .nav-commission{display:flex;min-height:48px;width:100%;margin-top:12px;align-items:center;justify-content:center}
+ .site-header .nav-account{gap:10px}
+}
+@media(max-width:450px){
+ .site-header .logo{font-size:1.15rem;letter-spacing:-.04em}
+ .site-header .logo img{height:26px!important;margin-right:4px!important}
+ .site-header .burger{padding:8px 10px}
+}
+
+
+/* Studio Experience V3 — cohesive commissioned-art storefront and client portal */
+:root{--studio-ink:#29231e;--studio-primary:#a45e3a;--studio-line:#dfd3c5;--studio-elev:#fffdf9}
+html{scroll-padding-top:100px}
+body{background:#f7f3ed}
+section{scroll-margin-top:76px}
+.site-header{box-shadow:0 2px 22px rgba(49,35,23,.065);border-bottom:1px solid #e3d7c8}
+.site-header #menu .nav-commission{box-shadow:0 6px 14px #a45e3a22}
+.hero{background:radial-gradient(ellipse at 85% 40%,#e8d5bc 0%,#f7f2e9 55%,#fcf8f1 100%)!important;padding-top:76px;padding-bottom:94px;position:relative}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:9px;background:#eee1d0;border:1px solid #e0ccb6;border-radius:100px;padding:8px 15px;letter-spacing:.1em;font-size:.76rem}
+.hero h1{max-width:12ch;line-height:1.035;font-weight:300}
+.hero .acts{align-items:center;margin-bottom:17px}
+.hero-proof{display:flex;align-items:center;gap:16px;color:#66594b;font-size:.87rem;flex-wrap:wrap;margin-top:12px}
+.hero-proof span{display:inline-flex;align-items:center;gap:6px}
+.hero-proof span::before{content:'✓';font-weight:700;color:#34754b}
+.hero .frame{border:10px solid #d8c4af;outline:1px solid #bba18b;box-shadow:0 20px 55px #4b332538}
+.studio-section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.studio-section-heading h2{margin-bottom:6px}
+.studio-section-heading .lead{margin:0}
+.section-kicker{font:700 .77rem/1.5 var(--sans);color:#9b5935;text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}
+.studio-quicklink{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#96512f;text-decoration:none;border-bottom:1px solid #ad7352;padding-bottom:4px}
+.studio-quicklink:hover{color:#6e391d}
+.service-teasers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 0}
+.service-teaser{background:#fffcf8;border:1px solid #e4d7c7;border-radius:16px;padding:22px;text-decoration:none;display:grid;gap:11px;transition:transform .18s,box-shadow .18s,border-color .18s;min-width:0}
+.service-teaser:hover{transform:translateY(-3px);box-shadow:0 12px 30px #61442e17;border-color:#cba588}
+.service-symbol{width:44px;height:44px;display:grid;place-items:center;background:#f3e4d4;border-radius:12px;color:#8c4d30;font-size:1.35rem}
+.service-teaser strong{font:500 1.28rem/1.2 var(--serif);color:#29231e}
+.service-teaser small{color:#6d6257;font-size:.91rem;line-height:1.55}
+.service-teaser .view{color:#995431;font-weight:700;font-size:.88rem}
+#gallery,#pricing,#how,#account,#order,#track,#reviews{border-top:1px solid #e6dbce}
+#gallery .grid{gap:22px}
+#gallery .art{background:#fffdf8;border:1px solid #e2d5c4;box-shadow:0 8px 22px #634b3510;overflow:hidden}
+#gallery .art img{transition:transform .3s}
+#gallery .art:hover img{transform:scale(1.025)}
+#pricing .pc{position:relative;background:#fffdf9;border:1px solid #dac9b5;border-radius:17px;padding:26px}
+#pricing .pc h3{margin-bottom:15px}
+#pricing .pc .pp{font-weight:700}
+#how .steps{counter-reset:commission-steps}
+#how .steps>div{background:#fffdf8;padding:26px 24px;border:1px solid #e2d3c1;border-radius:15px;box-shadow:0 8px 25px #4330210a;position:relative}
+#how .steps b{font-family:var(--sans);font-size:.8rem;font-weight:700;letter-spacing:.14em;background:#eee0d1;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;color:#96512f}
+#how .steps h3{font-size:1.3rem;margin:17px 0 9px}
+#account{background:linear-gradient(145deg,#f0e5d6,#f8f0e5)!important}
+.auth-switcher{box-shadow:0 23px 70px #6f48351a;border-radius:20px;border:1px solid #decbb7}
+#order .lead,#track .lead{max-width:68ch}
+#orderForm{max-width:820px;border-radius:18px}
+#track .orders-list{grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:15px}
+#track .order-list-card{position:relative;padding:21px;background:#fffdf9;border-color:#e0d1bd;border-radius:15px;gap:9px;min-height:160px;align-content:start;text-align:left;box-shadow:0 8px 24px #4c36260d;color:#29231e}
+#track .order-list-card:hover{background:#fff7ed;border-color:#bf8c68;transform:translateY(-2px)}
+#track .order-list-card[aria-pressed='true']{background:#fff6ec;border-color:#aa6941;box-shadow:inset 4px 0 #a45e3a,0 10px 25px #53352112}
+#track .order-list-card strong{font-size:1.08rem;letter-spacing:.01em}
+#track .order-list-card small{color:#665b4e}
+#trackOut:not(:empty){background:#fffdf9;border:1px solid #e0d1bd;border-radius:18px;padding:clamp(16px,3vw,34px);box-shadow:0 15px 38px #43302110}
+#trackOut .tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:9px;margin:22px 0}
+#trackOut .tl li{background:#f4ede4;padding:12px;border-top:3px solid #c9b7a3;border-radius:0 0 8px 8px;color:#5c5248}
+#trackOut .tl li.done{background:#eff6ee;border-top-color:#438256}
+#trackOut .tl li.cur{background:#fff1df;border-top-color:#a45e3a}
+#trackOut form{border-radius:14px}
+#trackOut .customer-messages{background:#faf6f0;border-color:#dbc8b4}
+#trackOut .customer-thread{display:grid;gap:10px;max-height:430px;overflow:auto;padding:12px 4px}
+#trackOut .customer-message{line-height:1.55}
+#trackOut .customer-message.mine{background:#e8f2e9}
+#reviews .rev blockquote{background:#fffdf9}
+.msg.show{color:#264d32;background:#eaf5ec;border:1px solid #a8c7b1;border-left:5px solid #3b8356;box-shadow:none}
+.msg.show[style*='bad'],.msg.show[style*='red']{color:#7b2d27;background:#fff0ed;border-color:#e1a39c}
+@media(max-width:900px){.service-teasers{grid-template-columns:1fr 1fr}.hero{padding-top:60px}.hero h1{max-width:15ch}}
+@media(max-width:620px){.service-teasers{grid-template-columns:1fr}.studio-section-heading{align-items:start;flex-direction:column}.hero{padding-bottom:76px}.hero-proof{gap:8px 14px}.hero h1{max-width:100%}#trackOut:not(:empty){padding:16px}#how .steps>div{padding:21px}}
+
+
+/* Strictly separate customer and administrator portal presentation. */
+.portal-access-note{max-width:650px;margin:18px auto 0;border:1px solid #ceab90;background:#fff9f0;color:#29231e;box-shadow:0 10px 28px #4a33220c}
+.portal-access-note h3{font-size:1.35rem;color:#29231e}
+.portal-access-note p{color:#534a40;line-height:1.65}
+.portal-access-note .hint{background:#f4e8d9;color:#534a40;border-left:3px solid #a95f38}
+.portal-access-note .btn{justify-self:start}
+
+/* Two-file architecture: views within customer index.html; only public sections scroll. */
+body:not([data-view="public"]) > .hero,body:not([data-view="public"]) > #gallery,body:not([data-view="public"]) > #pricing,body:not([data-view="public"]) > #how,body:not([data-view="public"]) > #reviews{display:none!important}
+body[data-view="public"] #supportSections{display:none!important}
+#supportSections{max-width:1160px;margin:0 auto;min-height:66vh;padding:30px 20px 70px}
+#supportSections > section{display:none!important}
+body[data-view="account"] #supportSections > #account,body[data-view="order"] #supportSections > #order,body[data-view="track"] #supportSections > #track{display:block!important}
+.spa-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:5px 0 24px;color:var(--mute);font-size:11px;letter-spacing:.13em}
+.spa-back{text-decoration:none;color:var(--gold);font-weight:600;font-size:13px;letter-spacing:normal}
+body[data-view="account"] #account{max-width:730px;margin:0 auto;border-radius:16px}
+body[data-view="order"] #order,body[data-view="track"] #track{border-radius:16px}
+body[data-view="public"] .spa-toolbar{display:none}
+@media(max-width:700px){#supportSections{padding:20px 12px 48px}.spa-toolbar{flex-wrap:wrap}}
+</style>
+<style>
+/* V4 — discrete public / authentication / customer workspace screens */
+[hidden]{display:none!important}
+.portal-shell{max-width:1160px;margin:0 auto;padding:42px clamp(16px,4vw,48px) 82px}
+.portal-hero{background:#29231e;color:#fff7e9;border-radius:24px;padding:clamp(26px,5vw,52px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:28px;box-shadow:0 20px 42px rgba(40,25,17,.10)}
+.portal-hero .eyebrow{color:#e8b68b}.portal-hero h1{font:400 clamp(2.1rem,4vw,3.5rem)/1.1 var(--serif);margin:0 0 12px}
+.portal-hero p{color:#e8dccf;max-width:58ch;margin:0}
+.portal-shell section{padding:0!important;background:transparent!important;color:#29231e!important;min-height:0!important}
+.portal-shell section#account{max-width:950px;margin:auto}
+.portal-shell #account>h2,.portal-shell #account>.lead{display:none}
+.portal-shell .auth-switcher{margin:auto}
+.portal-shell .account-card{max-width:100%}
+.portal-shell #order,.portal-shell #track{padding:26px!important;background:#fffdf8!important;border:1px solid #e2d6c6;border-radius:20px;margin:0 0 22px;box-shadow:0 10px 30px rgba(60,39,25,.045)}
+.portal-shell #orderForm{background:#2c2722;color:#fff8ed}
+.portal-shell .orders-list{margin-top:16px}
+.portal-secondary{color:#6d6257;font-size:.96rem}
+.portal-nav{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.portal-nav a{display:inline-flex;align-items:center;text-decoration:none;padding:11px 17px;border:1px solid #d1c0ac;border-radius:10px;font-weight:600;background:#fffdf8;color:#29231e}
+.portal-nav a.active{background:#29231e;color:#fffdf8;border-color:#29231e}
+.portal-shell .msg{max-width:960px}
+.site-header a:focus-visible,.portal-nav a:focus-visible{outline:3px solid #a95f38;outline-offset:3px}
+#portalLoading{padding:30px;background:#fffdf8;border-radius:14px;color:#29231e;margin-bottom:25px}
+.portal-help{margin:0 0 24px;padding:15px 18px;border-left:4px solid #a95f38;background:#fff8ed;color:#49362a;border-radius:8px}
+@media(max-width:740px){.portal-shell{padding:24px 14px 50px}.portal-hero{border-radius:15px;padding:25px}.portal-shell #order,.portal-shell #track{padding:17px!important}}
+
+/* Two-file architecture: views within customer index.html; only public sections scroll. */
+body:not([data-view="public"]) > .hero,body:not([data-view="public"]) > #gallery,body:not([data-view="public"]) > #pricing,body:not([data-view="public"]) > #how,body:not([data-view="public"]) > #reviews{display:none!important}
+body[data-view="public"] #supportSections{display:none!important}
+#supportSections{max-width:1160px;margin:0 auto;min-height:66vh;padding:30px 20px 70px}
+#supportSections > section{display:none!important}
+body[data-view="account"] #supportSections > #account,body[data-view="order"] #supportSections > #order,body[data-view="track"] #supportSections > #track{display:block!important}
+.spa-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:5px 0 24px;color:var(--mute);font-size:11px;letter-spacing:.13em}
+.spa-back{text-decoration:none;color:var(--gold);font-weight:600;font-size:13px;letter-spacing:normal}
+body[data-view="account"] #account{max-width:730px;margin:0 auto;border-radius:16px}
+body[data-view="order"] #order,body[data-view="track"] #track{border-radius:16px}
+body[data-view="public"] .spa-toolbar{display:none}
+@media(max-width:700px){#supportSections{padding:20px 12px 48px}.spa-toolbar{flex-wrap:wrap}}
+
+/* V5: each primary menu opens its own screen rather than a scrolled section */
+body[data-view="public"] > #gallery,body[data-view="public"] > #pricing,body[data-view="public"] > #how,body[data-view="public"] > #reviews{display:none!important}
+body[data-view="gallery"] > #gallery,body[data-view="pricing"] > #pricing,body[data-view="how"] > #how,body[data-view="reviews"] > #reviews{display:block!important}
+body[data-view="gallery"] #supportSections,body[data-view="pricing"] #supportSections,body[data-view="how"] #supportSections,body[data-view="reviews"] #supportSections{display:none!important}
+body[data-view="public"] > .hero{display:grid!important}
+body:not([data-view="public"]) > .hero{display:none!important}
+body[data-view="gallery"] > #gallery,body[data-view="pricing"] > #pricing,body[data-view="how"] > #how,body[data-view="reviews"] > #reviews{min-height:calc(100vh - 245px);padding-top:clamp(46px,6vw,80px);padding-bottom:80px}
+.site-header .nav-primary a[aria-current="page"]{color:#9d512d!important;font-weight:750!important;text-decoration:underline;text-underline-offset:7px;text-decoration-thickness:2px}
+/* Fix account status and sign-out overlap on every viewport */
+body[data-view="account"] #supportSections{max-width:1100px;padding-top:30px}
+body[data-view="account"] #account{max-width:850px;margin:0 auto;padding:clamp(24px,4vw,48px)!important;background:linear-gradient(145deg,#f5eadb 0%,#fbf7f0 76%)!important;border:1px solid #e7d8c7;border-radius:24px;box-shadow:0 14px 38px rgba(52,36,23,.06)}
+body[data-view="account"] #account > h2{text-align:center;font-size:clamp(2.5rem,5vw,4.2rem);line-height:1.12;margin:10px auto 14px}
+body[data-view="account"] #account > .lead{max-width:49ch;text-align:center;margin:0 auto 32px;line-height:1.7}
+body[data-view="account"] #accountPanel{max-width:680px;margin:0 auto;border-radius:18px;padding:clamp(20px,4vw,34px);width:100%;box-sizing:border-box;min-width:0}
+#accountPanel .account-user-row{display:flex;align-items:flex-start;justify-content:space-between;gap:22px;flex-wrap:wrap;min-width:0}
+#accountPanel .account-identity{flex:1 1 300px;min-width:0;max-width:100%}
+#accountEmail{font-size:clamp(1.15rem,2.7vw,1.6rem);overflow-wrap:anywhere;word-break:break-word;line-height:1.35;margin:8px 0 16px}
+#accountVerification{max-width:100%;width:100%;box-sizing:border-box;margin:0!important;padding:13px 16px!important;line-height:1.65;overflow-wrap:anywhere;position:static!important}
+#accountPanel #signOutBtn{flex:0 0 auto;min-height:44px;margin:0;white-space:nowrap;align-self:flex-start;padding:11px 20px}
+@media(max-width:650px){body[data-view="account"] #account{padding:24px 16px!important;border-radius:15px}#accountPanel .account-user-row{flex-direction:column;gap:18px}#accountPanel .account-identity{flex:1 1 auto;width:100%}#accountPanel #signOutBtn{width:100%}}
+</style></head>
+<body>
+<nav aria-label="Main website navigation" class="site-header">
+<a class="logo" href="index.html"><img alt="" onerror="this.remove()" src="logo.png" style="height:30px;vertical-align:middle;margin-right:8px"/>Art Commission <i>PH</i></a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Open navigation menu" class="burger" type="button"><span aria-hidden="true">☰</span><span class="burger-label">Menu</span></button>
+<div class="nav-layout" id="menu">
+<div aria-label="Explore the website" class="nav-primary">
+<a href="index.html#gallery">Gallery</a>
+<a href="index.html#pricing">Pricing</a>
+<a href="index.html#how">How it works</a>
+<a href="index.html#reviews">Reviews</a>
+</div>
+<div aria-label="Your account and commissions" class="nav-actions">
+<a class="nav-orders" hidden="" href="#track">My orders</a>
+<a aria-label="Sign in or manage your account" class="nav-account" href="#account"><svg aria-hidden="true" fill="none" height="19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="19"><circle cx="12" cy="8" r="3.5"></circle><path d="M5.5 20v-1.5a6.5 6.5 0 0 1 13 0V20"></path></svg><span class="nav-account-label">Sign in</span></a>
+<a class="btn nav-commission" href="#order">Commission artwork</a>
+</div>
+</div>
+</nav>
+<section class="hero" id="top">
+<div>
+<p class="eyebrow">Handmade by Jake | Philippines</p>
+<h1>Art made by hand, made for <em>you</em>.</h1>
+<p>Portraits, landscapes, eye keychains, paintings, school projects, and custom artworks, all made by hand by Jake. Delivered nationwide across the Philippines.</p>
+<div class="acts"><a class="btn" href="#order">Request a commission <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#gallery">Explore portfolio</a></div><div class="hero-proof"><span>Handmade, one piece at a time</span><span>Direct artist communication</span><span>Order progress in your account</span></div>
+</div>
+<div class="frame" id="heroArt"><img alt="Jake, charcoal portrait artist" class="me" onerror="this.remove()" src="profile.jpg"/><span class="tag">Charcoal on paper, drawn by hand</span></div>
+</section>
+<section id="gallery">
+<p class="section-kicker">01 / Selected work</p>
+<div class="studio-section-heading"><div><h2>Made with intention.</h2><p class="lead">Browse artworks by category, then request something made just for you.</p></div><a class="studio-quicklink" href="#order">Start your own piece →</a></div>
+<div class="tabs" id="tabs"></div>
+<div class="grid" id="grid"></div>
+</section>
+<section class="cream" id="pricing">
+<p class="section-kicker">02 / Services &amp; pricing</p>
+<h2>Choose a starting point.</h2>
+<p class="lead">Clear starting prices for standard services and personalized quotes for special requests.</p>
+<div aria-label="Popular commission categories" class="service-teasers">
+<a class="service-teaser" href="#order"><span aria-hidden="true" class="service-symbol">✎</span><strong>Portrait drawings</strong><small>Solo, couple, and family portraits. Sizes and details can be tailored to your request.</small><span class="view">Request a portrait →</span></a>
+<a class="service-teaser" href="#order"><span aria-hidden="true" class="service-symbol">▧</span><strong>Paintings &amp; landscapes</strong><small>Original scenery and custom painting concepts, quoted after reviewing the details.</small><span class="view">Discuss your concept →</span></a>
+<a class="service-teaser" href="#order"><span aria-hidden="true" class="service-symbol">✧</span><strong>Something personal</strong><small>Eye keychains, school projects, and unique handmade commissions.</small><span class="view">Request custom art →</span></a>
+</div>
+<p class="section-kicker" style="margin-top:42px">Full service menu</p>
+<div class="price" id="priceBox"></div>
+<p class="note"><strong>Before you pay:</strong> a 50% GCash downpayment is required after Jake confirms and you accept the final price. “Price on quotation” services are priced after review. Standard prices may be discussed before the commission is accepted.</p>
+</section>
+<section id="how">
+<p class="section-kicker">03 / The process</p>
+<h2>From your idea to finished art.</h2>
+<p class="lead">A straightforward commission process with clear payment and progress updates.</p>
+<div class="steps">
+<div><b>1</b><h3>Send a request</h3><p>Tell me what you want and add a reference photo. A request is not yet an approved price.</p></div>
+<div><b>2</b><h3>Confirm the details</h3><p>I review your request and confirm the final price and the details with you.</p></div>
+<div><b>3</b><h3>Pay 50% to start</h3><p>Pay the downpayment by GCash. I verify it, then begin. Follow your artwork progress from your customer account.</p></div>
+<div><b>4</b><h3>Pay the balance, receive it</h3><p>Pay the remaining balance (plus the LBC shipping fee if sent by courier). Local delivery can be paid in cash on delivery.</p></div>
+</div>
+</section>
+
+
+
+<section class="cream" id="reviews">
+<h2>What clients say</h2>
+<div class="rev" id="revList"></div>
+<form id="revForm">
+<h3>Leave a review</h3>
+<div class="two"><label>Name<input name="who" required=""/></label>
+<label>Rating<select name="stars"><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option></select></label></div>
+<label>Review<textarea name="text" required="" rows="3"></textarea></label>
+<button class="btn" type="submit">Send review</button>
+<div class="msg" id="revMsg" role="status"></div>
+</form>
+</section>
+<div id="supportSections"><div class="spa-toolbar"><a href="#top" class="spa-back">← Back to the website</a><span>CUSTOMER ACCOUNT</span></div><section class="cream" id="account">
+<h2>Your account</h2>
+<p class="lead">Sign in to place commissions, see all your orders, follow progress, and message Jake about any order.</p>
+<div class="auth-switcher" id="authForms">
+<div class="auth-switcher-header">
+<span class="eyebrow">YOUR ART COMMISSION PH ACCOUNT</span>
+<h3 id="authTitle">Welcome back</h3>
+<p id="authSubtitle">Sign in to view your commissions, payments, and conversations.</p>
+</div>
+<div aria-label="Account access" class="auth-mode-tabs" role="group">
+<button aria-pressed="true" class="auth-mode-tab active" id="showSignIn" type="button">Sign in</button>
+<button aria-pressed="false" class="auth-mode-tab" id="showSignUp" type="button">Create an account</button>
+</div>
+<form class="account-card auth-form" id="signInForm">
+<h3 class="auth-form-heading">Sign in</h3>
+<label>Email address<input autocomplete="email" name="email" required="" type="email"/></label>
+<label>Password<input autocomplete="current-password" name="password" required="" type="password"/></label>
+<button class="btn" type="submit">Sign in to my account</button>
+<div class="auth-form-bottom"><button class="text-btn" id="forgotPassword" type="button">Forgot password?</button></div>
+<p class="auth-bottom-prompt">New to Art Commission PH? <button class="auth-inline-link" data-auth-mode="signup" type="button">Create an account</button></p>
+</form>
+<form class="account-card auth-form" hidden="" id="signUpForm">
+<h3>Create an account</h3>
+<label>Your name<input autocomplete="name" maxlength="100" minlength="2" name="full_name" required=""/></label>
+<label>Email address<input autocomplete="email" name="email" required="" type="email"/></label>
+<label>Create password<input autocomplete="new-password" minlength="8" name="password" required="" type="password"/></label>
+<p class="hint">Use an email address you can access. Use an email address you can access, especially for account recovery.</p>
+<button class="btn" type="submit">Create account</button>
+<p class="auth-bottom-prompt">Already have an account? <button class="auth-inline-link" data-auth-mode="signin" type="button">Sign in instead</button></p>
+</form>
+</div>
+<div class="account-card portal-access-note" hidden="" id="adminAccountNotice" role="status">
+<h3>Customer account access unavailable</h3>
+<p>This account belongs to the Art Commission PH administrator. Administrator sessions cannot use the customer account or customer order portal.</p>
+<p class="hint">You can browse the public portfolio. To use a different customer account, sign out first.</p>
+<button class="btn ghost" id="adminSessionSignOut" type="button">Sign out of administrator account</button>
+</div>
+<div class="account-card" hidden="" id="accountPanel">
+<div class="account-user-row">
+<div class="account-identity"><p class="eyebrow">SIGNED IN AS</p><h3 id="accountEmail"></h3><p class="hint" id="accountVerification"></p></div>
+<button class="btn ghost" id="signOutBtn" type="button">Sign out</button>
+</div>
+<button class="text-btn" hidden="" id="resendVerification" type="button">Resend verification email</button>
+</div>
+<form class="account-card" hidden="" id="passwordResetForm">
+<h3>Set a new password</h3>
+<p class="hint">Choose a new password for your account.</p>
+<label>New password<input autocomplete="new-password" minlength="8" name="password" required="" type="password"/></label>
+<button class="btn" type="submit">Update password</button>
+</form>
+<div aria-live="polite" class="msg" id="accountMsg" role="status"></div>
+</section><section id="order">
+<p class="section-kicker">04 / Commission request</p>
+<h2>Tell me what you envision.</h2>
+<p class="lead">Share your details and you will get an order number right away.</p>
+<p class="hint" id="orderLoginNote">Please sign in to your customer account to place an order.</p>
+<form hidden="" id="orderForm">
+<h3 class="fh">Your details</h3>
+<div class="two"><label>Name<input name="name" required=""/></label><label>Contact number<input inputmode="tel" name="contact" required=""/></label></div>
+<h3 class="fh">Your artwork</h3>
+<label>Category<select id="fCat" name="category"></select></label>
+<label>Service and size<select id="fSvc"></select></label>
+<div class="note" id="fPrice" role="status"></div>
+<div class="two"><label id="fSubW">Number of subjects<input min="1" name="subjects" type="number" value="1"/></label><label id="fDimW">Requested size or dimensions<input name="size" placeholder="e.g. 20 x 30 cm"/></label></div>
+<label>Description of the artwork<textarea name="note" required="" rows="3"></textarea></label>
+<label>Reference photo<input accept="image/*" name="photo" type="file"/></label>
+<h3 class="fh">Delivery</h3>
+<label>Delivery address<input autocomplete="street-address" name="address" required=""/></label>
+<p class="hint">Enter the address where you expect to receive the artwork. This request does not finalize your delivery method: you will choose Local delivery or LBC later when the order becomes eligible. Sending a request does not approve the price. Jake will confirm the final price first; the 50% downpayment is due only after you accept it.</p>
+<button class="btn" type="submit">Send order</button>
+<div class="msg" id="orderMsg" role="status"></div>
+</form>
+</section><section id="track">
+<p class="section-kicker">Your private commission studio</p>
+<h2>My orders</h2>
+<p class="lead">Your commissions appear here automatically after you sign in. Select an order to see artwork progress, payment details, delivery status, and messages with Jake.</p>
+<div class="orders-list" id="ordersList"><p class="hint">Sign in to view your orders.</p></div>
+<div aria-live="polite" class="msg" id="trackMsg" role="status"></div>
+<div id="trackOut"></div>
+</section></div><footer><div><b>Art Commission PH</b><br/>Handmade drawings, paintings, and custom artworks by Jake Balidio. Delivered nationwide.</div><div><a href="index.html#gallery">Gallery</a><a href="index.html#pricing">Pricing</a><a href="index.html#how">How it works</a><a href="#account">My account</a><a href="#track">My orders</a><a href="index.html#reviews">Reviews</a></div></footer>
+<dialog aria-label="Artwork preview" id="dlg"><button aria-label="Close preview" class="x" onclick="dlg.close()">×</button><div id="dlgArt"></div><div class="cap"><h3 id="dlgTitle"></h3><small id="dlgCat"></small><p id="dlgCap"></p></div></dialog>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script>
+window.APP_PAGE='customer-spa';
+
+const sb=supabase.createClient('https://ufpkjbayngiujjwloubx.supabase.co','sb_publishable_UY1HEQRPlq5JUR1a-Sv3cQ_BnnEJvH2');
+const $=s=>document.querySelector(s);
+const GCASH={num:'09632589163',displayNum:'0963 258 9163',name:'Jake S. Balidio'};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const STATUS=['Pending','Negotiating','In Progress','Done','Delivered'];
+const pub=p=>sb.storage.from('artworks').getPublicUrl(p).data.publicUrl;
+let prices={Solo:800,Couple:1500,Family:2500},arts=[],revs=[],items=[],ao=[],ar=[],aa=[],cat='All';
+const SAMPLE=[['Solo','Grandma Nena'],['Couple','Anniversary'],['Family','The Cruz Family'],['Solo','Graduation'],['Couple','Sweethearts'],['Family','Family Gathering']];
+
+/* charcoal portrait generator */
+function art(type,seed){
+ const id='g'+seed+type[0]+Math.random().toString(36).slice(2,6);
+ const fig=(x,y,s,sh)=>`<g transform="translate(${x} ${y}) scale(${s})"><path d="M-70 120 Q-70 60 -20 52 L20 52 Q70 60 70 120Z" fill="url(#b${id})"/><rect x="-14" y="30" width="28" height="30" fill="#4a453d"/><ellipse cx="0" cy="0" rx="38" ry="48" fill="url(#h${id})"/><path d="M-40 -8 Q-42 -60 0 -58 Q42 -60 40 -8 Q30 -34 0 -34 Q-30 -34 -40 -8Z" fill="#14130f"/><ellipse cx="-14" cy="-4" rx="5" ry="2.5" fill="#1b1914"/><ellipse cx="14" cy="-4" rx="5" ry="2.5" fill="#1b1914"/><path d="M-9 22 Q0 28 9 22" stroke="#2a251f" stroke-width="2.5" fill="none"/></g>`;
+ let f= type=='Solo'?fig(150,150,1.5):type=='Couple'?fig(105,150,1.15)+fig(200,155,1.1):fig(80,150,.95)+fig(150,150,1)+fig(225,170,.75)+fig(112,190,.55);
+ const r=seed%3, sx=[0,12,-10][r];
+ return `<svg viewBox="0 0 300 380" role="img" aria-label="Charcoal ${type} portrait"><defs>
+<filter id="f${id}"><feTurbulence baseFrequency=".035 .06" numOctaves="4" seed="${seed}" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="5"/><feTurbulence baseFrequency=".8" numOctaves="2" seed="${seed+3}" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 -.1" result="g"/><feComposite in="SourceGraphic" in2="g" operator="in"/></filter>
+<radialGradient id="h${id}" cx=".4" cy=".35"><stop offset="0" stop-color="#d8d1c1"/><stop offset="1" stop-color="#5b564c"/></radialGradient>
+<linearGradient id="b${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2722"/><stop offset="1" stop-color="#0f0e0c"/></linearGradient>
+<radialGradient id="v${id}" cx=".5" cy=".45" r=".75"><stop offset=".5" stop-color="#bdb5a4"/><stop offset="1" stop-color="#6d675b"/></radialGradient></defs>
+<rect width="300" height="380" fill="#e6dfd0"/><rect width="300" height="380" fill="url(#v${id})" opacity=".85"/>
+<g transform="translate(${sx} 20)" filter="url(#f${id})">${f}</g></svg>`}
+
+
+
+async function shrink(file){const b=await createImageBitmap(file);const s=Math.min(1,1000/Math.max(b.width,b.height));const c=document.createElement('canvas');c.width=Math.round(b.width*s);c.height=Math.round(b.height*s);c.getContext('2d').drawImage(b,0,0,c.width,c.height);return new Promise(r=>c.toBlob(r,'image/webp',.82))}
+function show(el,t,bad=false){el.textContent=t;el.dataset.state=bad?'error':'success';el.classList.add('show')}
+
+let currentUser=null, activeCustomerMessageChannel=null, passwordRecoveryMode=false;
+function accountMessage(message, bad=false){const el=$('#accountMsg');el.textContent=message;el.dataset.state=bad?'error':(/created|sent|signed in|updated|signed out|saved successfully/i.test(message)?'success':'info');el.classList.add('show')}
+function friendlyAuthError(error, context='authentication'){
+ const raw=String(error?.message||'Something went wrong.');
+ const low=raw.toLowerCase();
+ if(low.includes('email rate limit exceeded')||low.includes('rate limit')||low.includes('too many requests')) return 'Supabase has temporarily limited authentication emails because too many were requested in a short time. Please stop retrying for now and wait before trying again. If this keeps happening during testing, configure a custom SMTP provider in Supabase Authentication → SMTP Settings; the default email service has strict sending limits.';
+ if(low.includes('email not confirmed')) return 'Please verify your email using the confirmation link before signing in.';
+ if(low.includes('invalid login credentials')) return 'The email or password is incorrect. Check both fields and try again.';
+ if(low.includes('password should be at least')||low.includes('weak_password')) return 'Choose a stronger password that meets the password requirements.';
+ return (context==='sign in'?'Sign-in failed: ':context==='sign up'?'Could not create account: ':context==='password reset'?'Could not send password-reset email: ':context==='verification'?'Could not resend verification email: ':'Authentication failed: ')+raw;
+}
+function isVerifiedUser(user){return !!(user && user.email_confirmed_at)}
+function setAccountBusy(form,busy,label){
+ const b=form.querySelector('button[type="submit"]');if(!b)return;
+ if(busy){b.dataset.originalLabel=b.textContent;b.disabled=true;b.textContent=label||'Please wait...'}
+ else{b.disabled=false;b.textContent=b.dataset.originalLabel||b.textContent}
+}
+function updateHeaderAccount(user){
+ const account=$('.nav-account'), label=$('.nav-account-label'), orders=$('.nav-orders');
+ if(!account||!label||!orders)return;
+ // The public website NEVER exposes a link to the administrator console.
+ label.textContent=user?'My account':'Sign in';
+ account.href='index.html#account';
+ account.setAttribute('aria-label',user?'Manage your customer account':'Sign in or create a customer account');
+ orders.hidden=!user;orders.href='index.html#track';
+}
+async function checkCurrentRole(){
+ const {data,error}=await sb.rpc('is_admin');
+ if(error)throw new Error('Account permissions could not be checked. Please try again.');
+ return data===true;
+}
+async function refreshCustomerAuth(){
+ const {data:{session},error}=await sb.auth.getSession();
+ if(error){accountMessage('Could not check your session. Please refresh and try again.',true);return}
+ currentUser=session?.user||null;
+ const notice=$('#adminAccountNotice');
+ notice.hidden=true;
+ if(currentUser){
+   let isAdmin;
+   try { isAdmin=await checkCurrentRole(); }
+   catch(err){
+     currentUser=null;
+     updateHeaderAccount(null);
+     $('#authForms').hidden=true;
+     $('#accountPanel').hidden=true;
+     $('#passwordResetForm').hidden=true;
+     $('#orderForm').hidden=true;
+     $('#orderLoginNote').hidden=false;
+     $('#ordersList').innerHTML='<p class="hint">Account access is unavailable until permissions can be verified.</p>';
+     $('#trackOut').innerHTML='';
+     accountMessage(err.message,true);
+     return;
+   }
+   if(isAdmin){
+     // Admin can browse the public portfolio, but cannot use customer features.
+     currentUser=null;
+     T=null;
+     if(activeCustomerMessageChannel){await sb.removeChannel(activeCustomerMessageChannel);activeCustomerMessageChannel=null}
+     updateHeaderAccount(null);
+     $('#authForms').hidden=true;
+     $('#accountPanel').hidden=true;
+     $('#passwordResetForm').hidden=true;
+     notice.hidden=false;
+     if(window.APP_PAGE==='dashboard'){location.replace('index.html#account');return;}
+     $('#orderForm').hidden=true;
+     $('#orderLoginNote').hidden=false;
+     $('#ordersList').innerHTML='<p class="hint">Customer orders are not available to administrator accounts.</p>';
+     $('#trackOut').innerHTML='';
+     return;
+   }
+ }
+ updateHeaderAccount(currentUser);
+ const verified=isVerifiedUser(currentUser);
+ customerView();
+ if(window.APP_PAGE==='dashboard'){
+   if(!currentUser || !verified){ location.replace('index.html#account?next='+(location.hash==='#order'?'order':'track')); return; }
+   document.querySelector('#dashboardProtected').hidden=false;
+   const loading=document.querySelector('#portalLoading');if(loading)loading.hidden=true;
+ }
+ if(window.APP_PAGE==='account' && currentUser && verified && !passwordRecoveryMode){
+   // Signed-in customers manage orders in the dedicated workspace.
+   const continueBtn=document.querySelector('#goDashboard');if(continueBtn)continueBtn.hidden=false;
+ }
+
+ if(!passwordRecoveryMode)$('#passwordResetForm').hidden=true;
+ $('#authForms').hidden=!!currentUser;
+ $('#accountPanel').hidden=!currentUser;
+ $('#accountEmail').textContent=currentUser?.email||'';
+ $('#accountVerification').textContent=currentUser?(verified?'Your account is ready. You can place orders and view your commissions.':'Your email is not verified yet. Check your inbox, or resend the verification email below.'):'';
+ $('#resendVerification').hidden=!currentUser||verified;
+ $('#orderForm').hidden=!verified;
+ $('#orderLoginNote').hidden=verified;
+ if(currentUser?.user_metadata?.full_name && !$('#orderForm [name="name"]').value){
+   $('#orderForm [name="name"]').value=currentUser.user_metadata.full_name;
+ }
+ if(verified){await loadCustomerOrders()}else{
+   $('#ordersList').innerHTML='<p class="hint">Sign in with an active customer account to view your orders.</p>';
+   $('#trackOut').innerHTML='';
+ }
+}
+$('#adminSessionSignOut').onclick=async()=>{
+ const {error}=await sb.auth.signOut();
+ if(error){accountMessage('Sign out failed: '+error.message,true);return}
+ currentUser=null;
+ await refreshCustomerAuth();
+ accountMessage('Signed out. You can now use a customer account.');
+};
+// Show only one account form at a time; Supabase auth behavior remains unchanged.
+function setAuthMode(mode){
+ const signup=mode==='signup';
+ $('#signInForm').hidden=signup;
+ $('#signUpForm').hidden=!signup;
+ $('#showSignIn').classList.toggle('active',!signup);
+ $('#showSignUp').classList.toggle('active',signup);
+ $('#showSignIn').setAttribute('aria-pressed',String(!signup));
+ $('#showSignUp').setAttribute('aria-pressed',String(signup));
+ $('#authTitle').textContent=signup?'Create your account':'Welcome back';
+ $('#authSubtitle').textContent=signup?'Start your commission journey with a secure account.':'Sign in to view your commissions, payments, and conversations.';
+ const msg=$('#accountMsg');msg.classList.remove('show');msg.textContent='';
+}
+$('#authForms').addEventListener('click',event=>{
+ const modeButton=event.target.closest('#showSignIn,#showSignUp,[data-auth-mode]');
+ if(!modeButton)return;
+ setAuthMode(modeButton.id==='showSignUp'||modeButton.dataset.authMode==='signup'?'signup':'signin');
+});
+setAuthMode('signin');
+
+$('#signInForm').onsubmit=async e=>{
+ e.preventDefault();const f=new FormData(e.target);setAccountBusy(e.target,true,'Signing in...');
+ const {error}=await sb.auth.signInWithPassword({email:String(f.get('email')).trim(),password:String(f.get('password'))});
+ setAccountBusy(e.target,false);
+ if(error){accountMessage(friendlyAuthError(error,'sign in'),true);return}
+ // Reject administrator credentials on the customer login form.
+ let adminAccount;
+ try{adminAccount=await checkCurrentRole()}
+ catch(err){await sb.auth.signOut();await refreshCustomerAuth();accountMessage(err.message,true);return}
+ if(adminAccount){
+   await sb.auth.signOut();
+   currentUser=null;
+   await refreshCustomerAuth();
+   accountMessage('Administrator accounts cannot sign in on the customer website. Use the separate administrator login page.',true);
+   return;
+ }
+ e.target.reset();await refreshCustomerAuth();
+ if(currentUser){location.hash='#'+(pendingCustomerDestination||'track');pendingCustomerDestination=null;customerView()}
+};
+$('#signUpForm').onsubmit=async e=>{
+ e.preventDefault();const f=new FormData(e.target);setAccountBusy(e.target,true,'Creating account...');
+ const {data,error}=await sb.auth.signUp({
+  email:String(f.get('email')).trim(),
+  password:String(f.get('password')),
+  options:{data:{full_name:String(f.get('full_name')).trim()},emailRedirectTo:window.location.origin+window.location.pathname}
+ });
+ setAccountBusy(e.target,false);
+ if(error){accountMessage(friendlyAuthError(error,'sign up'),true);return}
+ e.target.reset();
+ if(data.session){await sb.auth.signOut(); currentUser=null;await refreshCustomerAuth();setAuthMode('signin');accountMessage('Account created! Sign in with your email and password to continue.');}
+ else {setAuthMode('signin');accountMessage('Account created. If email confirmation is required, check your inbox before signing in.');}
+};
+
+$('#passwordResetForm').onsubmit=async e=>{
+ e.preventDefault();const f=new FormData(e.target),btn=e.target.querySelector('button');btn.disabled=true;btn.textContent='Updating...';
+ const {error}=await sb.auth.updateUser({password:String(f.get('password'))});
+ btn.disabled=false;btn.textContent='Update password';
+ if(error){accountMessage('Could not update password: '+error.message,true);return}
+ passwordRecoveryMode=false;e.target.reset();e.target.hidden=true;accountMessage('Password updated. You can now use your new password.');await refreshCustomerAuth();
+};
+
+$('#forgotPassword').onclick=async()=>{
+ const email=$('#signInForm [name="email"]').value.trim();
+ if(!email){accountMessage('Enter your email address in the Sign in form first.',true);return}
+ const {error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:window.location.origin+window.location.pathname});
+ accountMessage(error?friendlyAuthError(error,'password reset'):'If an account exists for that email, a password-reset link will be sent.',!!error);
+};
+$('#resendVerification').onclick=async()=>{
+ if(!currentUser?.email)return;
+ const {error}=await sb.auth.resend({type:'signup',email:currentUser.email,options:{emailRedirectTo:window.location.origin+window.location.pathname}});
+ accountMessage(error?friendlyAuthError(error,'verification'):'If the account needs verification, a new email has been sent.',!!error);
+};
+$('#signOutBtn').onclick=async()=>{
+ await sb.auth.signOut();currentUser=null;T=null;
+ if(activeCustomerMessageChannel){await sb.removeChannel(activeCustomerMessageChannel);activeCustomerMessageChannel=null}
+ $('#trackOut').innerHTML='';$('#ordersList').innerHTML='<p class="hint">Sign in to view your orders.</p>';
+ accountMessage('You have signed out.');await refreshCustomerAuth();if(window.APP_PAGE==='dashboard')location.replace('index.html#account');
+};
+async function loadCustomerOrders(){
+ if(!currentUser||!isVerifiedUser(currentUser)){return}
+ const {data,error}=await sb.rpc('customer_orders');
+ if(error){$('#ordersList').innerHTML='<p class="hint">Could not load orders: '+esc(error.message)+'</p>';return}
+ const orders=Array.isArray(data)?data:[];
+ if(!orders.length){$('#ordersList').innerHTML='<div class="empty">You do not have any orders yet. Your new commissions will appear here automatically.</div>';return}
+ $('#ordersList').innerHTML=orders.map(o=>`<button type="button" class="order-list-card" data-order-id="${esc(o.id)}" aria-pressed="${T?.id===o.id?'true':'false'}">
+   <strong>${esc(o.order_no)}</strong><span>${esc(o.type||'Artwork request')}</span>
+   <small>Placed ${new Date(o.created_at).toLocaleDateString('en-PH')}</small>
+   <span>${bdg('Artwork',o.status)} ${bdg('Payment',o.summary?.payment_status||'Unpaid')}</span>
+   <small>${o.unread_messages?`${o.unread_messages} unread message${o.unread_messages==1?'':'s'} · `:''}${esc(o.delivery_status||'Not Ready')}</small>
+  </button>`).join('');
+}
+async function loadCustomerOrder(orderId){
+ if(!currentUser||!isVerifiedUser(currentUser))return;
+ const {data,error}=await sb.rpc('customer_order_detail',{p_order_id:orderId});
+ if(error){show($('#trackMsg'),'Could not load this order: '+error.message,true);return}
+ T=data;$('#trackMsg').classList.remove('show');renderTrack();await loadCustomerOrders();
+}
+$('#ordersList').onclick=async e=>{
+ const b=e.target.closest('[data-order-id]');if(!b)return;
+ await loadCustomerOrder(b.dataset.orderId);
+ document.querySelector('#trackOut').scrollIntoView({behavior:'smooth',block:'start'});
+};
+async function loadCustomerMessages(orderId){
+ if(!T||T.id!==orderId)return;
+ const {data,error}=await sb.rpc('customer_order_messages',{p_order_id:orderId});
+ const out=$('#customerThread');if(!out)return;
+ if(error){out.innerHTML='<p class="hint">Messages could not be loaded. Please refresh.</p>';return}
+ const msgs=Array.isArray(data)?data:[];
+ out.innerHTML=msgs.length?msgs.map(m=>`<div class="customer-message ${m.sender_role==='customer'?'mine':''}"><small>${m.sender_role==='customer'?'You':'Jake'} · ${new Date(m.created_at).toLocaleString('en-PH')}</small>${esc(m.body).replace(/\n/g,'<br>')}</div>`).join(''):'<p class="hint">No messages yet. You can send Jake a question below.</p>';
+ out.scrollTop=out.scrollHeight;
+}
+async function subscribeCustomerMessages(orderId){
+ if(activeCustomerMessageChannel?.orderId===orderId)return;
+ if(activeCustomerMessageChannel){await sb.removeChannel(activeCustomerMessageChannel);activeCustomerMessageChannel=null}
+ const channel=sb.channel('customer-order-messages-'+orderId)
+  .on('postgres_changes',{event:'INSERT',schema:'public',table:'order_messages',filter:'order_id=eq.'+orderId},()=>loadCustomerMessages(orderId))
+  .subscribe();
+ channel.orderId=orderId;activeCustomerMessageChannel=channel;
+}
+
+
+let cats=[],opts=[];
+async function load(){
+ const [c,o,a,r]=await Promise.all([sb.from('categories').select('*').order('sort'),sb.from('options').select('*').order('category').order('sort'),sb.from('artworks').select('*').eq('published',true).order('created_at',{ascending:false}),sb.from('reviews').select('*').eq('approved',true).order('created_at',{ascending:false})]);
+ cats=c.data||[];opts=o.data||[];arts=a.data||[];revs=r.data||[];drawGallery();drawPrices();drawReviews();fillForm()}
+function drawGallery(){
+ items=arts.length?arts.map(a=>({cat:a.category,title:a.title,desc:a.description,img:pub(a.image_path)})):SAMPLE.map((a,i)=>({cat:'portrait',type:a[0],title:a[1],seed:i+1}));
+ $('#tabs').innerHTML=[{id:'All',name:'All'},...cats].map(c=>`<button class="${c.id==cat?'on':''}" data-c="${c.id}" aria-pressed="${c.id==cat?'true':'false'}">${esc(c.name)}</button>`).join('');
+ $('#grid').innerHTML=(arts.length?'':'<p class="note" style="grid-column:1/-1">Sample illustrations are shown until Jake uploads his real artworks.</p>')+items.map((a,i)=>[a,i]).filter(([a])=>cat=='All'||a.cat==cat).map(([a,i])=>`<div class="art" tabindex="0" role="button" aria-label="Preview ${esc(a.title)}" data-i="${i}">${vis(a)}<p>${esc(a.title)}</p></div>`).join('')||'<p class="lead">No artworks in this category yet.</p>'}
+const vis=a=>a.img?`<img src="${esc(a.img)}" alt="${esc(a.title)}" loading="lazy" style="display:block;width:100%">`:art(a.type||'Solo',a.seed);
+$('#tabs').onclick=e=>{if(e.target.dataset.c){cat=e.target.dataset.c;drawGallery()}};
+function openArt(el){const a=items[+el.dataset.i];$('#dlgArt').innerHTML=vis(a);$('#dlgTitle').textContent=a.title;$('#dlgCat').textContent=(cats.find(c=>c.id==a.cat)||{}).name||'';$('#dlgCap').textContent=a.desc||'';$('#dlg').showModal()}
+$('#dlg').onclick=e=>{if(e.target.id=='dlg')e.target.close()};
+$('#grid').onclick=e=>{const a=e.target.closest('.art');if(a)openArt(a)};
+$('#grid').onkeydown=e=>{if(e.key=='Enter'||e.key==' '){const a=e.target.closest('.art');if(a){e.preventDefault();openArt(a)}}};
+(()=>{const i=new Image();i.alt='Charcoal portrait by Jake';i.style.cssText='display:block;width:100%;height:auto';
+ i.onload=()=>$('#heroArt').prepend(i);i.onerror=()=>$('#heroArt').insertAdjacentHTML('afterbegin','<div class="hero-placeholder" role="img" aria-label="Artwork preview placeholder"><div class="hero-placeholder-art">A</div><p><strong>Portfolio preview</strong><br>Jake’s artwork will appear here.</p></div>');i.src='hero.jpg'})();
+
+function drawPrices(){
+ $('#priceBox').innerHTML=cats.map(c=>{const l=opts.filter(o=>o.category==c.id);return l.length?`<div class="pc"><h3>${esc(c.name)}</h3><ul>${l.map(o=>`<li>${esc(o.label)}<br><b class="pp">${o.price!=null?'₱'+Number(o.price).toLocaleString():'Price on quotation'}</b></li>`).join('')}</ul></div>`:''}).join('')}
+function fillForm(){$('#fCat').innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('');fCat()}
+function fCat(){const c=$('#fCat').value;$('#fSvc').innerHTML=opts.filter(o=>o.category==c).map(o=>`<option value="${o.id}">${esc(o.label)}</option>`).join('');$('#fSubW').hidden=c!='portrait';$('#fDimW').hidden=c=='portrait';fPrice()}
+function fPrice(){const o=opts.find(x=>x.id==$('#fSvc').value);$('#fPrice').textContent=!o?'':o.price!=null?`Fixed price: ₱${Number(o.price).toLocaleString()} (negotiable)`:'Price on quotation: Jake will send you a quote after reviewing your details.'}
+$('#fCat').onchange=fCat;$('#fSvc').onchange=fPrice;
+function drawReviews(){
+ $('#revList').innerHTML=revs.map(r=>`<blockquote>${'★'.repeat(r.stars)}<br>${esc(r.body)}<cite>${esc(r.name)}</cite></blockquote>`).join('')||'<p class="lead">No reviews yet. Be the first.</p>'}
+
+$('#orderForm').onsubmit=async e=>{
+ e.preventDefault();
+ if(!currentUser||!isVerifiedUser(currentUser)){show($('#orderMsg'),'Please sign in with a verified email account before placing an order.');location.href='index.html#account';return}
+ const f=new FormData(e.target),btn=e.target.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
+ try{
+  const o=opts.find(x=>x.id==$('#fSvc').value);if(!o)throw new Error('Please choose a service and size.');
+  let path=null;const file=f.get('photo');
+  if(file&&file.size){
+   if(file.size>12*1024*1024)throw new Error('Please choose a reference image smaller than 12 MB.');
+   const blob=await shrink(file);path=crypto.randomUUID()+'.webp';
+   const u=await sb.storage.from('references').upload(path,blob,{contentType:'image/webp',upsert:false});if(u.error)throw u.error
+  }
+  const port=f.get('category')=='portrait';
+  const {data,error}=await sb.rpc('create_order',{p:{
+   name:f.get('name'),contact:f.get('contact'),category:f.get('category'),service:o.label,
+   size:port?'':f.get('size'),subjects:port?f.get('subjects'):'',address:f.get('address'),
+   note:f.get('note'),photo:path,est:o.price!=null?'Fixed price: PHP '+o.price:'Quotation'
+  }});
+  if(error)throw error;
+  e.target.reset();fillForm();
+  show($('#orderMsg'),`Order received: ${data.order_no}. It has been added to your account. Jake will review your request and confirm the final price.`);
+  await loadCustomerOrders();await loadCustomerOrder(data.id);location.hash='#track';
+ }catch(err){show($('#orderMsg'),'Could not send the order: '+err.message,true)}
+ btn.disabled=false;btn.textContent='Send order'
+};
+const peso=n=>n==null?'-':'₱'+Number(n).toLocaleString('en-PH',{minimumFractionDigits:2,maximumFractionDigits:2});
+let T=null;
+const payForm=(pu,amt,help)=>`<form class="pf gcash-payment" data-pu="${pu}" style="margin-top:14px"><div class="gcash-heading"><p class="section-label">SECURE PAYMENT INSTRUCTIONS</p><h3>Pay via GCash</h3><p>${help}</p></div><div class="gcash-recipient"><div class="gcash-qr-wrap"><img class="gcash-qr" src="gcash-qr.jpg" alt="Original GCash payment QR code for Jake S. Balidio" width="420" height="420" loading="lazy"><p class="gcash-transfer-note">Transfer fees may apply.</p></div><div class="gcash-details"><p class="gcash-amount-label">Amount to pay for this stage</p><p class="gcash-amount">${peso(amt)}</p><p class="gcash-name">Jake S. Balidio</p><p class="gcash-number">${esc(GCASH.displayNum)}</p><button class="btn ghost gcash-copy" type="button" data-copy-gcash>Copy mobile number</button><span class="gcash-copy-feedback" role="status" aria-live="polite"></span><p class="gcash-instructions">Scan the QR code using your GCash app, or enter the mobile number manually. Before confirming, check that the recipient name shown in GCash is <b>Jake S. Balidio</b>.</p></div></div><div class="gcash-submit-intro"><h4>After sending your transfer</h4><p>Enter the GCash reference number and attach your receipt or screenshot below. Your payment remains pending until Jake checks the transfer and verifies it. Uploading a receipt does not automatically mark the payment as paid.</p></div><label>GCash reference number<input name="ref" required minlength="8" maxlength="20" pattern="[A-Za-z0-9]{8,20}" autocomplete="off"></label><label>Receipt screenshot (optional)<input type="file" name="rc" accept="image/*"></label><button class="btn" type="submit">Submit payment for verification</button></form>`;
+const delivForm=()=>`<form class="df" style="margin-top:14px"><p>Choose how you want to receive your artwork.</p><label>Delivery<select name="m"><option value="Local">Local delivery by Jake</option><option value="LBC">LBC shipping (you pay the shipping fee)</option></select></label><label>Remaining balance payment (local delivery only)<select name="a"><option>GCash</option><option>COD</option></select></label><button class="btn" type="submit">Save delivery choice</button></form>`;
+const bdg=(k,v)=>`<span class="st ${/^(Verified|Paid|Delivered|Done|Shipped)/.test(v)?'ok':/^(Rejected|Cancelled)/.test(v)?'bad':''}"><small>${k}</small>${esc(v)}</span>`;
+function tl(o,s){const dn=['Delivered'].includes(o.delivery_status),st=[['Order placed',1],['Price confirmed',s.price!=null],['Downpayment verified',s.price!=null&&s.down_verified>=s.down_required],['Artwork in progress',['In Progress','Done','Delivered'].includes(o.status)],['Artwork done',['Done','Delivered'].includes(o.status)],['Fully paid',s.payment_status=='Paid'],[dn?'Delivered':'Shipped or delivered',['Shipped','Delivered'].includes(o.delivery_status)]];let c=st.findIndex(x=>!x[1]);
+ return '<ol class="tl" aria-label="Order progress">'+st.map((x,i)=>`<li class="${x[1]?'done':i==c?'cur':''}">${x[0]}</li>`).join('')+'</ol>'}
+function renderTrack(){const o=T,s=o.summary,P=o.payments,act=x=>P.some(p=>p.purpose==x&&p.status!='Rejected'),pend=x=>P.some(p=>p.purpose==x&&p.status=='Pending Verification');
+ let h=`<p style="margin-top:14px"><b>${esc(o.order_no)}</b> | ${esc(o.type)} | Size: ${esc(o.size)}</p><p>${bdg('Artwork',o.status)}${bdg('Payment',s.payment_status)}${bdg('Delivery',o.delivery_status+(o.delivery_method?' ('+o.delivery_method+')':''))}</p>`;
+ if(o.status!='Cancelled')h+=tl(o,s);
+ if(s.price!=null)h+=`<p>Artwork price: ${peso(s.price)}<br>Required downpayment (50%): ${peso(s.down_required)}<br>Verified downpayment: ${peso(s.down_verified)}<br>Remaining artwork balance: ${peso(s.balance)}${o.delivery_method=='LBC'?`<br>LBC shipping fee: ${s.shipping_fee!=null?peso(s.shipping_fee):'to be confirmed by Jake'}`:''}<br><b>Still due: ${peso(s.total_due)}</b></p>`;
+ else h+='<p>Jake has not confirmed your final price yet. Please wait for his reply.</p>';
+ if(o.tracking_no)h+=`<p>LBC tracking number: <b>${esc(o.tracking_no)}</b></p>`;
+ if(s.payment_status=='Rejected'&&s.last_rejection)h+=`<p>Your last payment was rejected: ${esc(s.last_rejection)}. You can submit it again.</p>`;
+ h+=`<p>Jake's reply: ${esc(o.reply)}</p>`;
+ const dpOK=s.price!=null&&s.down_verified>=s.down_required,open=o.status!='Cancelled'&&o.status!='Delivered';
+ if(s.price!=null&&open&&!act('Downpayment'))h+=payForm('Downpayment',s.down_required,'Pay the 50% downpayment first. Jake starts your artwork after he verifies it.');
+ if(pend('Downpayment'))h+='<p>Your downpayment is waiting for Jake to verify it.</p>';
+ if(dpOK&&open&&o.delivery_status=='Not Ready'&&!act('Final Payment'))h+=delivForm();
+ if(o.delivery_method=='Local'&&o.pay_arrangement=='COD'&&open)h+=`<p>Local delivery with COD: the remaining ${peso(s.balance)} is paid in cash when Jake delivers your artwork.</p>`;
+ if(o.delivery_method=='LBC'&&open)h+='<p>For LBC shipping, the remaining balance and the shipping fee must both be paid and verified before your artwork is shipped.</p>';
+ const cod=o.delivery_method=='Local'&&o.pay_arrangement=='COD';
+ if(dpOK&&open&&o.status=='Done'&&o.delivery_method&&!cod&&(o.delivery_method!='LBC'||s.shipping_fee!=null)&&!act('Final Payment'))h+=payForm('Final Payment',s.final_required,'Your artwork is done! Pay the final amount through GCash.');
+ if(pend('Final Payment'))h+='<p>Your final payment is waiting for Jake to verify it.</p>';
+ if(o.status=='Cancelled'){h+=`<p><b>This order is cancelled.</b>${o.cancel_reason?' Reason: '+esc(o.cancel_reason):''}</p>`;
+  if(s.refund_status=='Pending')h+=`<p>A refund of ${peso(s.refund_due)} will be sent to your GCash.</p>`;
+  if(s.refund_status=='Refunded')h+=`<p>Your refund of ${peso(s.refund_due)} was sent. GCash reference: ${esc(s.refund_ref)}</p>`}
+ else if(o.cancel_requested)h+='<p>You asked to cancel this order. Jake will review your request and reply here.</p>';
+ else if(open&&!['Shipped','Delivered'].includes(o.delivery_status))h+=`<form class="cf" style="margin-top:14px"><p>Need to cancel? Jake decides the refund. Work that already started may be partly or fully non-refundable.</p><label>Reason<input name="why" required minlength="3" maxlength="300"></label>${s.down_verified>0?'<label>GCash number for the refund<input name="g" required pattern="09[0-9]{9}" inputmode="tel" placeholder="09XXXXXXXXX"></label>':''}<button class="btn" type="submit">Request cancellation</button></form>`;
+ h+=`<section class="customer-messages"><h3>Messages with Jake</h3><p class="hint">Ask a question about this commission. Your conversation stays attached to this order.</p><div id="customerThread" class="customer-thread" aria-live="polite"><p class="hint">Loading messages...</p></div><form class="customer-message-form"><label>Your message<textarea name="body" required minlength="1" maxlength="2000" placeholder="Type your question or update here..."></textarea></label><button class="btn" type="submit">Send message</button></form></section>`;
+ $('#trackOut').innerHTML=h;loadCustomerMessages(o.id);subscribeCustomerMessages(o.id)}
+$('#trackOut').onsubmit=async e=>{
+ e.preventDefault();if(!T||!currentUser||!isVerifiedUser(currentUser))return;
+ const f=new FormData(e.target),b=e.target.querySelector('button');b.disabled=true;
+ try{
+  let r;
+  if(e.target.classList.contains('customer-message-form')){
+   r=await sb.rpc('customer_send_message',{p_order_id:T.id,p_body:String(f.get('body')||'').trim()});
+   if(r.error)throw r.error;e.target.reset();await loadCustomerMessages(T.id);await loadCustomerOrders();show($('#trackMsg'),'Message sent to Jake.');b.disabled=false;return;
+  }
+  if(e.target.classList.contains('pf')){
+   let path=null;const file=f.get('rc');
+   if(file&&file.size){if(file.size>5*1024*1024)throw new Error('Please use a receipt image smaller than 5 MB.');
+    const blob=await shrink(file);path=crypto.randomUUID()+'.webp';
+    const u=await sb.storage.from('receipts').upload(path,blob,{contentType:'image/webp',upsert:false});if(u.error)throw u.error}
+   r=await sb.rpc('customer_submit_payment',{p_order_id:T.id,p_purpose:e.target.dataset.pu,p_ref:String(f.get('ref')||'').trim(),p_receipt:path});
+  }else if(e.target.classList.contains('cf')){
+   r=await sb.rpc('customer_request_cancellation',{p_order_id:T.id,p_reason:String(f.get('why')||'').trim(),p_gcash:f.get('g')||null});
+  }else{
+   r=await sb.rpc('customer_choose_delivery',{p_order_id:T.id,p_method:f.get('m'),p_arr:f.get('m')=='LBC'?'GCash':f.get('a')});
+  }
+  if(r.error)throw r.error;
+  await loadCustomerOrder(T.id);show($('#trackMsg'),'Saved successfully.');
+ }catch(err){const m=err.message||'';show($('#trackMsg'),/violates|relation|function|syntax|permission/i.test(m)||m.length>220?'Something went wrong. Please try again.':m,true)}
+ b.disabled=false;
+};
+$('#revForm').onsubmit=async e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));
+ const {error}=await sb.from('reviews').insert({name:f.who,stars:+f.stars,body:f.text});
+ if(error)return show($('#revMsg'),'Could not send the review: '+error.message);
+ e.target.reset();show($('#revMsg'),'Thank you! Your review will appear after Jake approves it.')};
+
+
+const bg=$('.burger'),mn=$('#menu');bg.onclick=()=>{const o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o)};mn.onclick=e=>{if(e.target.closest('a')){mn.classList.remove('open');bg.setAttribute('aria-expanded','false')}};
+load();refreshCustomerAuth();sb.auth.onAuthStateChange((event,_session)=>{
+ if(event==='PASSWORD_RECOVERY'){passwordRecoveryMode=true;$('#authForms').hidden=true;$('#accountPanel').hidden=true;$('#passwordResetForm').hidden=false;accountMessage('Enter a new password to finish resetting your account.')}
+ setTimeout(()=>refreshCustomerAuth(),0)
+});
+
+
+
+// Customer single-file router: account, order and track are NOT homepage scroll sections.
+let pendingCustomerDestination=null;
+function customerView(){
+ const target=['gallery','pricing','how','reviews','account','order','track'].includes(location.hash.slice(1))?location.hash.slice(1):'public';
+ if((target==='order'||target==='track') && (!currentUser || !isVerifiedUser(currentUser))){
+   pendingCustomerDestination=target;
+   if(location.hash!=='#account'){location.hash='#account';return;}
+ }
+ document.body.dataset.view=target;
+ document.querySelectorAll('.nav-primary a').forEach(a=>{if(a.hash==='#'+target)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ window.scrollTo({top:0,behavior:'instant'});
+}
+window.addEventListener('hashchange',customerView);
+customerView();
+// Dispatch primary commission CTA through the same auth gate as all order actions.
+document.querySelectorAll('a[href="#order"],a[href="#track"]').forEach(a=>a.addEventListener('click',e=>{
+ if(!currentUser || !isVerifiedUser(currentUser)){
+   e.preventDefault();pendingCustomerDestination=a.getAttribute('href').slice(1);location.hash='#account';customerView();
+ }
+}));
+
+</script>
+</body>
+</html>
